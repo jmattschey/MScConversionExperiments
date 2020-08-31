@@ -1,0 +1,33 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      collapse: section
+      scroll_highlight: yes
+      before: |
+            <li><a rel="StrathLogo" href="https://www.strath.ac.uk/" target="blank">
+            <img src="./images/UniLogo.PNG" style="border-width:0" width="150" alt="Creative Commons License"/></a><li>
+            <li><a href="./">Experiment Library</a></li>
+      after: |
+        <li><a rel="CClicense" href="https://creativecommons.org/licenses/by-sa/4.0/" 
+            target="blank"><img alt="Creative Commons License" 
+            style="border-width:0" 
+            src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><li>
+    download: ["pdf", "epub"]
+    sharing:
+      facebook: yes
+      twitter: yes
+      google: no
+      linkedin: no
+      weibo: no
+      instapaper: no
+      vk: no
+      all: ['facebook', 'google', 'twitter', 'linkedin', 'weibo', 'instapaper']
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default
+

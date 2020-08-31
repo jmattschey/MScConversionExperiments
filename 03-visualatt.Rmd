@@ -1,0 +1,37 @@
+# Visual Attention
+
+
+
+## Inhibition of Return
+
+For inhibition of return (IOR) tasks, participants are expected to identify the location in which a target appeared (often right vs left side of a computer screen). The target is preceded by a cue, which appears in the same location (valid cues) or in a different location (invalid cues). If the target appears within less than 300ms after the cue, participants respond fasterand with higher accuracy on trials with valid cues (i.e. target appears in the cued location) than on trials with invalid cues (Klein, 2000; Posner, & Cohen, 1984). If more than 300ms lie between the cue and the target, the opposite is the case: participants respond faster if the target appears on the opposite side of where the cue appeared. In other words, if the delay between cue and target is longer than 300ms, people respond faster on invalid trials. This is also known as 'validity effect.' 
+
+Thus, if the cue appears after more than around 300ms, we appear to experience suppression of our ability to orient attention to the cued location. This suppression is the "inhibition of return" (e.g. to that display location). Posner and Cohen (1984) suggested that IOR facilitates the detection of novel information and may thus aid **visual search**.
+
+**Formats**
+
+The task is available for Open Sesame: 
+
+[Open Sesame Online and Offline](link here) 
+
+
+**Things you will need to know for your Methods section**
+
+Targets can appear 50ms, 200ms, 500ms or 800ms after the cue. You can change this by opening **"Pract_InhibitionOfReturn_loop"** and **"InhibitionOfReturn_loop"** and changing the values in the **"SOA"** column.
+
+The paradigm used in the Open Sesame task is based on Zhao and Heinke (2014) but not identical to it.
+
+
+**References**
+
+Klein, R. M. (2000). Inhibition of return. *Trends in Cognitive Sciences, 4*(4), 138-147.
+
+Posner, M. I. , & Cohen, Y. (1984). Components of visual orienting. In: Bouma H, Bouwhuis DG, editors. Attention and Performance X: Control of Language Processes. X. London: Lawrence Erlbaum
+
+Zhao, Y., & Heinke, D. (2014). What causes IOR? Attention or perception?–Manipulating cue and target luminance in either blocked or mixed condition. *Vision Research, 105*, 37-46.
+
+
+## Visual Search
+
+Text!
+

@@ -1,0 +1,4 @@
+# Questionnaires & Copyright
+
+The questionnaires included in this Experiment Library are subject to different licence agreements. In general, though, they can be used if the original source is acknowledged as partof your work. Thus, if you want to use any of these questionnaires, **it is vital that you quote the article that relates to it.**
+

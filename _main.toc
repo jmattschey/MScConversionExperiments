@@ -1,0 +1,67 @@
+\contentsline {chapter}{\numberline {1}Choosing an Experiment for your Research Project}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}How to use the Experiment Library}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Accessibility}{5}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Adapting the Experiment Library for other courses}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Intelligence Tests}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Raven's Matrices for Adults}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Shortening Raven's Advanced Progressive Matrices}{10}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Mill Hill Vocabulary Scale}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Coloured Progressive Matrices}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Crichton Vocabulary Scale}{13}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Executive Functions}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Working Memory Tasks}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Digit Span Task}{15}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Attention Tasks}{16}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Attentional Network Task (ANT)}{16}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Simon Task}{18}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}What if I want to change the task from squares to arrows or something else?}{19}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Change the response keys}{23}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Stroop Task}{25}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}How to change the words and/or colours}{25}{subsection.4.2.6}%
+\contentsline {chapter}{\numberline {5}Visual Attention}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Inhibition of Return}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Visual Search}{28}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Psycholinguistics}{29}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Lexical Decision Task}{29}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Assessig Degree of Bilingualism}{30}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Miscellaneous Tasks}{31}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Spatial Awareness}{31}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Mental Rotation}{31}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Social Attitudes}{34}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Questionnaires \& Copyright}{35}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Personality Questionnaires}{37}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Big 5}{37}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Ten Item Personality Inventory (TIPI)}{37}{subsection.9.1.1}%
+\contentsline {section}{\numberline {9.2}Emotions}{37}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Humor Styles Questionnaire (HSQ)}{37}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Oxford Happiness Questionnaire (OHQ)}{38}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Satisfaction with life scale (SWLS)}{38}{subsection.9.2.3}%
+\contentsline {section}{\numberline {9.3}Relationships:}{38}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Romantic jealousy (SF-MJS)}{38}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}State Adult Attachment Measure (SAAM)}{38}{subsection.9.3.2}%
+\contentsline {section}{\numberline {9.4}Political Tendency:}{38}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Political conservatism scale}{38}{subsection.9.4.1}%
+\contentsline {section}{\numberline {9.5}Personality Disorders:}{38}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Psychopathy (LSRP)}{38}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Histrionic Personality Features (BHPS); attention seeking, etc}{38}{subsection.9.5.2}%
+\contentsline {chapter}{\numberline {10}Mental Health}{39}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Depression and Anxiety}{39}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Depression, Anxiety, Stress (DASS-21)}{39}{subsection.10.1.1}%
+\contentsline {section}{\numberline {10.2}(Modified) Abbreviated Math Anxiety Scale}{40}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Autism}{41}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Internet and Social Media related}{42}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Problematic Internet Use Questionnaire (PIUQ)}{42}{subsection.10.4.1}%
+\contentsline {section}{\numberline {10.5}General Mental Health}{42}{section.10.5}%
+\contentsline {chapter}{\numberline {11}Qualtrics}{45}{chapter.11}%
+\contentsline {section}{\numberline {11.1}How to import questionnaires into Qualtrics}{45}{section.11.1}%
+\contentsline {section}{\numberline {11.2}How to test data recording}{48}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Generate pilot data}{48}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Check pilot data}{48}{subsection.11.2.2}%
+\contentsline {section}{\numberline {11.3}How to download Qualtrics data}{53}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Open Sesame}{55}{chapter.12}%
+\contentsline {section}{\numberline {12.1}How to install Open Sesame}{55}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Windows:}{55}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.2}Mac OS}{56}{subsection.12.1.2}%
+\contentsline {section}{\numberline {12.2}Open Sesame: The Basics}{57}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Starting to work with Open Sesame}{57}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Open sesame on Android}{58}{section.12.4}%

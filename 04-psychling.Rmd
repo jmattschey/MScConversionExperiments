@@ -1,0 +1,50 @@
+# Psycholinguistics
+
+## Lexical Decision Task
+
+Lexical decision tasks require participants to identify whether a word they are presented with is a real word (e.g. "bird") or not (e.g. "quapbum"). 
+
+**Formats**
+
+The Lexical Decision Task is available for Open Sesame: 
+
+[Open Sesame Online and Offline](link here) 
+
+
+**Things you will need to know for your Methods section**
+
+The timing of individual trials (e.g. display time for each sketchpad) was based on Laurence, Pinto, Rosa, and Macedo (2018).
+
+The words and non-words used in the present task were generated using the [English Lexicon Project](https://elexicon.wustl.edu/). The restricted parameters were:
+
+*For words:*
+
+- Word length: 4 to 10 letters
+- Number of orthographic neighbours: 4 to 6
+- Log of Frequency of a word as reported by the HAL Study: 8 to 15
+- Concreteness Ratings: 4 to 5
+- Emotional Valence: 0 to 4
+- Emotional Arousal: 0 to 5
+- Number of Syllables: 2 to 5
+- Query Scope: Restricted ELP Lexicon
+
+*For non-words:*
+
+- Word length: 4 to 10 letters
+- Orthographic neighbors that a word has: up to 15
+- BG_Freq_By_Pos: 4750 to 5000
+- NWI_Mean_RT: 200 to 1000
+- NWI_SD: up to 700
+- Obs: from 10
+- NWI_Mean_Accuracy: from 0.6
+
+These restrictions produced a list of 30 words and 30 non-words. [Click here for an overview of their characteristics](link here to excel file)
+
+**References for Lexical Decision Task**
+
+Laurence, P. G., Pinto, T. M., Rosa, A. T. F., & Macedo, E. C. (2018). Can a lexical decision task predict efficiency in the judgment of ambiguous sentences?. Psicologia: Reflexão e Crítica, 31(1), 13.
+
+## Assessig Degree of Bilingualism
+
+LSBQ
+
