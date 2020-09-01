@@ -80,7 +80,7 @@
 
 \title{Experiment Library}
 \author{Jennifer Mattschey}
-\date{2020-08-31}
+\date{2020-09-01}
 
 \begin{document}
 \maketitle
@@ -270,14 +270,11 @@ The Android version is used by the experimenter and should not be seen by the pa
 
 \href{link\%20here}{Qualtrics} \textbar{} \href{link\%20here}{Open Sesame - Android} \textbar{} \href{link\%20here}{Paper-Based}
 
-\hypertarget{executive-functions}{%
-\chapter{Executive Functions}\label{executive-functions}}
-
 \hypertarget{working-memory-tasks}{%
-\section{Working Memory Tasks}\label{working-memory-tasks}}
+\chapter{Working Memory Tasks}\label{working-memory-tasks}}
 
 \hypertarget{digit-span-task}{%
-\subsection{Digit Span Task}\label{digit-span-task}}
+\section{Digit Span Task}\label{digit-span-task}}
 
 Digit Span Tasks can be used to assess working memory span. Participants are presented with a series of digits and asked to recall digits correctly. The Open Sesame Task you will find below begins with two trials that ask participants to correctly recall three digits. This number increases every two trials, until participants are asked to recall 9 digits correctly.
 
@@ -308,7 +305,7 @@ If the digits are changed to single numbers or letters, all you need to do is to
 \section{Attention Tasks}\label{attention-tasks}}
 
 \hypertarget{attentional-network-task-ant}{%
-\subsection{Attentional Network Task (ANT)}\label{attentional-network-task-ant}}
+\section{Attentional Network Task (ANT)}\label{attentional-network-task-ant}}
 
 Attentional Network Tasks (ANTs) aim to assess performance in relation to the three attentional networks proposed by Posner and Petersen (1990): alerting, orienting, and executive control. The executive control network is sometimes also called ``conflict network.'' ANTs combine the cued reaction time paradigm proposed by Posner (1980) and the Eriksen Flanker Task (Eriksen, \& Eriksen, 1974). The former requires participants to identify on which side (i.e.~right or left) a target appeared, while the latter asks participants to identify a target surrounded by distractors.
 
@@ -359,7 +356,7 @@ The task is available in two different Open Sesame formats:
 The ANT designed by Fan et al.~(2002) displays the first fixation cross of each trial for 400-1600ms, which is determined randomly. The display duration of the last fixation cross is determined by subtracting the duration of the first fixation cross from 3500ms. So if the first fixation cross was on screen for 500ms, the last fixation cross would be displayed for 3000ms, because 3500 - 500 = 3000. To randomly calculate these numbers, each Open Sesame file has an inline script. For the online version, it is written in Javascript, for the offline version in Python.
 
 \hypertarget{simon-task}{%
-\subsection{Simon Task}\label{simon-task}}
+\section{Simon Task}\label{simon-task}}
 
 The Simon Task is based on the observation that people respond faster and with higher accuracy if the stimulus they respond to and the required response share features, for example, location (Simon, \& Wolf, 1963; Simon, \& Rudell, 1967). One version of the task requires participants to identify the colour of squares (e.g.~Gulbinaite, van Rijn, \& Cohen, 2014). Figure 5.4. shows an example of such a task. Squares are either presented on the right or left side of the screen. The response keys, M and Z, are located on the left and right side of the keyboard (if we are using a QWERTY keyboard). This means the response location (left vs.~right) and the presentation location (left vs.~right) can either match or mismatch.
 
@@ -529,7 +526,7 @@ Once you have done this for the practice block, remember to do the same for the 
 Stoet, G. (2017). Sex differences in the Simon task help to interpret sex differences in selective attention. \emph{Psychological Research, 81}(3), 571-581.
 
 \hypertarget{stroop-task}{%
-\subsection{Stroop Task}\label{stroop-task}}
+\section{Stroop Task}\label{stroop-task}}
 
 The Stroop Task (Stroop, 1935) is an interference control task that requires participants to identify the font colour in which colour words are written in. The word and the font colour can be either congruent, e.g.~{RED}, or incongruent, e.g.~{BLUE}. On incongruent trials, reaction time generally increases while accuracy decreases. The difference in performance between congruent and incongruent trials is also referred to as the Stroop Effect.
 
@@ -554,9 +551,6 @@ To change either the words that are displayed or the colour they are displayed i
 \textbackslash end\{figure\}
 
 If you want to change the word that is displayed, for example from ``RED'' to ``PURPLE'', the words in the first column (framed in orange) needs to be changed. If you want to change the font colour, for example from {RED} to {RED}, this needs to be done in the second column, framed in yellow. Instead of colour names, you can also enter \href{https://htmlcolorcodes.com/}{Hex Colour Codes} to define the font colour. Remember that the changes you make need to reflected by the instructions you give to participants.
-
-\hypertarget{visual-attention}{%
-\chapter{Visual Attention}\label{visual-attention}}
 
 \hypertarget{inhibition-of-return}{%
 \section{Inhibition of Return}\label{inhibition-of-return}}
@@ -584,11 +578,6 @@ Klein, R. M. (2000). Inhibition of return. \emph{Trends in Cognitive Sciences, 4
 Posner, M. I. , \& Cohen, Y. (1984). Components of visual orienting. In: Bouma H, Bouwhuis DG, editors. Attention and Performance X: Control of Language Processes. X. London: Lawrence Erlbaum
 
 Zhao, Y., \& Heinke, D. (2014). What causes IOR? Attention or perception?--Manipulating cue and target luminance in either blocked or mixed condition. \emph{Vision Research, 105}, 37-46.
-
-\hypertarget{visual-search}{%
-\section{Visual Search}\label{visual-search}}
-
-Text!
 
 \hypertarget{psycholinguistics}{%
 \chapter{Psycholinguistics}\label{psycholinguistics}}
@@ -661,16 +650,21 @@ Laurence, P. G., Pinto, T. M., Rosa, A. T. F., \& Macedo, E. C. (2018). Can a le
 \hypertarget{assessig-degree-of-bilingualism}{%
 \section{Assessig Degree of Bilingualism}\label{assessig-degree-of-bilingualism}}
 
-LSBQ
+The Language and Social Background Questionnaire (LSBQ) aims to provide an indication of how bilingual or monolingual a person is. It considers how frequently people use different languages, how proficient they are, and in what contexts they use different languages.
 
-\hypertarget{miscellaneous-tasks}{%
-\chapter{Miscellaneous Tasks}\label{miscellaneous-tasks}}
+\textbf{Formats}
+
+The LSBQ is analysed through an Excel spreadsheet, which can be downloaded \href{https://figshare.com/articles/The_Language_and_Social_Background_Questionnaire_Assessing_Degree_of_Bilingualism_in_a_Diverse_Population_Supplementary_Materials/3972486}{here}. Along with the Excel spreadsheet, a PDF in English is available.
+
+\textbf{References for LSBQ}
+
+Anderson, J. A., Mak, L., Chahi, A. K., \& Bialystok, E. (2018). The language and social background questionnaire: Assessing degree of bilingualism in a diverse population. Behavior research methods, 50(1), 250-263.
 
 \hypertarget{spatial-awareness}{%
-\section{Spatial Awareness}\label{spatial-awareness}}
+\chapter{Spatial Awareness}\label{spatial-awareness}}
 
 \hypertarget{mental-rotation}{%
-\subsection{Mental Rotation}\label{mental-rotation}}
+\section{Mental Rotation}\label{mental-rotation}}
 
 During mental rotation tasks, participants are generally presented with two objects and asked to identify whether these objects are the same or different. The objects can be two-dimensional and three-dimensional, and one image is rotated by a few degrees (e.g.~50°, 100°,\ldots) compared to the other. Below is an example image from the data set used in the Open Sesame task you can download below.
 
@@ -709,7 +703,7 @@ The shorter set of pictures was created by putting the list of stimuli file name
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.25\linewidth]{images/RotationNumberList} 
+{\centering \includegraphics[width=0.2\linewidth]{images/RotationNumberList} 
 
 }
 
@@ -724,10 +718,29 @@ For example, for object 20, the two pictures in which the second object was rota
 
 Ganis, G., \& Kievit, R. (2015). A new set of three-dimensional shapes for investigating mental rotation processes: validation data and stimulus set. \emph{Journal of Open Psychology Data, 3}, e3: Retrieved from: \url{https://openpsychologydata.metajnl.com/articles/10.5334/jopd.ai/}
 
-\hypertarget{social-attitudes}{%
-\section{Social Attitudes}\label{social-attitudes}}
+\hypertarget{social-psychology-tasks}{%
+\chapter{Social Psychology Tasks}\label{social-psychology-tasks}}
 
-Implicit Association Task
+\hypertarget{implicit-association-task-iat}{%
+\section{Implicit Association Task (IAT)}\label{implicit-association-task-iat}}
+
+Implicit Association Tasks (IATs) require participants to categorise words as fast as possible into one of two categories (e.g.~pleasant vs.~unpleasant). In general, faster responses suggest stronger implicit associations. After some practice blocks with only two options, participants are expected to be familiar with the target words and asked to sort them while four different target categories are present. These categories are paired, e.g.~``female - pleasant'', ``male - unpleasant.'' If the paired categories match the associations held by the participant, reaction times tend to be faster. For example, if participants have positive associations with the word and/or category female, they would be expected to respond faster if ``female'' and ``pleasant are displayed together than if''female" and "unpleasant are displayed together.
+
+\textbf{Formats}
+
+A task version looking at gender and maths/language studies association can be downloaded for Open Sesame.
+
+\href{link\%20here}{Open Sesame Online and Offline}
+
+\textbf{Things you will need to know for your Methods section}
+
+The task that can be downloaded combines the paradigms used by Smeding et al.~(2016) and Nosek, Banaji, and Greenwald (2016).
+
+\textbf{References}
+
+Smeding, A., Quinton, J. C., Lauer, K., Barca, L., \& Pezzulo, G. (2016). Tracking and simulating dynamics of implicit stereotypes: A situated social cognition perspective. Journal of personality and social psychology, 111(6), 817.
+
+Nosek, B. A., Banaji, M. R., \& Greenwald, A. G. (2016, December 27). Math = Male, Me = Female, therefore Math ≠ Me. \url{https://doi.org/10.1037/0022-3514.83.1.44}
 
 \hypertarget{questionnaires-copyright}{%
 \chapter{Questionnaires \& Copyright}\label{questionnaires-copyright}}

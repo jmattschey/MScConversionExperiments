@@ -1,0 +1,24 @@
+# Social Psychology Tasks
+
+## Implicit Association Task (IAT)
+
+Implicit Association Tasks (IATs) require participants to categorise words as fast as possible into one of two categories (e.g. pleasant vs. unpleasant). In general, faster responses suggest stronger implicit associations. After some practice blocks with only two options, participants are expected to be familiar with the target words and asked to sort them while four different target categories are present. These categories are paired, e.g. "female - pleasant", "male - unpleasant." If the paired categories match the associations held by the participant, reaction times tend to be faster. For example, if participants have positive associations with the word and/or category female, they would be expected to respond faster if "female" and "pleasant are displayed together than if "female" and "unpleasant are displayed together.
+
+**Formats**
+
+A task version looking at gender and maths/language studies association can be downloaded for Open Sesame.
+
+[Open Sesame Online and Offline](link here) 
+
+
+**Things you will need to know for your Methods section**
+
+The task that can be downloaded combines the paradigms used by Smeding et al. (2016) and Nosek, Banaji, and Greenwald (2016).
+
+
+**References**
+
+
+Smeding, A., Quinton, J. C., Lauer, K., Barca, L., & Pezzulo, G. (2016). Tracking and simulating dynamics of implicit stereotypes: A situated social cognition perspective. Journal of personality and social psychology, 111(6), 817.
+
+Nosek, B. A., Banaji, M. R., & Greenwald, A. G. (2016, December 27). Math = Male, Me = Female, therefore Math ≠ Me. https://doi.org/10.1037/0022-3514.83.1.44

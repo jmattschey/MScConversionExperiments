@@ -1,0 +1,248 @@
+## Attention Tasks
+
+## Attentional Network Task (ANT)
+Attentional Network Tasks (ANTs) aim to assess performance in relation to the three attentional networks proposed by Posner and Petersen (1990): alerting, orienting, and executive control. The executive control network is sometimes also called "conflict network." ANTs combine the cued reaction time paradigm proposed by Posner (1980) and the Eriksen Flanker Task (Eriksen, & Eriksen, 1974). The former requires participants to identify on which side (i.e. right or left) a target appeared, while the latter asks participants to identify a target surrounded by distractors.
+
+The ANT included in this experiment library is based on the task version proposed by Fan, McCandliss, Sommer, Raz, and Posner (2002). The task includes five different cues. Some inform the participant that a target is about to appear and where. Others only let the the participant know that the target will appear shortly but not where. Finally, on some trials, the target will appear without a cue preceding it. Figure 5.2. shows the overview of cues participants see prior to starting the experiment.
+
+```{r Figure2-2, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Targets can be preceded by five different types of cues.'}
+
+knitr::include_graphics('images/ANT_Cues.PNG')
+```
+
+The targets in this task version are arrows, which can appear either above or below the fixation cross. They are surrounded by distractor stimuli, which can either be congruent (i.e. arrows pointing in the same direction), incongruent (i.e. arrows pointing in the opposite direction), or neutral (in this case, a line or dash). Figure 5.3. shows the different types of target displays as they are explained to the participant.
+
+```{r Figure2-3, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Targets can be surrounded by congruent, incongruent, or neutral stimuli.'}
+
+knitr::include_graphics('images/ANT_Targets.PNG')
+```
+
+
+**How are measures for the three attentional networks obtained?**
+
+Performance in relation to the three networks can be assessed based on differences in reaction time and/or accuracy. This is done by comparing performance on trials with different cue types:
+
+- **Alertness Network:** difference between the no-cue and the double cue condition
+- **Orienting Network:** difference between the centre cue and spatial cue condition
+- **Executive Control:** difference between trials with congruent flankers and trials with incongruent flankers
+
+
+**Formats**
+
+The task is available in two different Open Sesame formats: 
+
+[Open Sesame Online](link here) | [Open Sesame Offline](link here) 
+
+**Things you will need to know for your Methods section**
+
+The ANT designed by Fan et al. (2002) displays the first fixation cross of each trial for 400-1600ms, which is determined randomly. The display duration of the last fixation cross is determined by subtracting the duration of the first fixation cross from 3500ms. So if the first fixation cross was on screen for 500ms, the last fixation cross would be displayed for 3000ms, because 3500 - 500 = 3000. To randomly calculate these numbers, each Open Sesame file has an inline script. For the online version, it is written in Javascript, for the offline version in Python.
+
+
+## Simon Task
+
+The Simon Task is based on the observation that people respond faster and with higher accuracy if the stimulus they respond to and the required response share features, for example, location (Simon, & Wolf, 1963; Simon, & Rudell, 1967). One version of the task requires participants to identify the colour of squares (e.g. Gulbinaite, van Rijn, & Cohen, 2014). Figure 5.4. shows an example of such a task. Squares are either presented on the right or left side of the screen. The response keys, M and Z, are located on the left and right side of the keyboard (if we are using a QWERTY keyboard). This means the response location (left vs. right) and the presentation location (left vs. right) can either match or mismatch. 
+
+
+```{r Figure2-4, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Example sequence of a Simon Task with coloured squares.'}
+
+knitr::include_graphics('images/SimonTaskExample.PNG')
+```
+
+If the square is red, participants should press Z, which is located on the left side of the keyboard, regardless of where the square appears. If the red square appears on the left side of the screen (i.e. congruent trial), participants tend to be faster and commit overall fewer errors than if the red square appears on the right side of the screen (i.e. incongruent trial).
+
+Other variations of the task use the written words "left" and "right", or arrows.
+
+**Formats**
+
+The coloured square version of task is available for Open Sesame: 
+
+[Open Sesame Online and Offline](link here) 
+
+
+### What if I want to change the task from squares to arrows or something else?
+
+Open the Simon Task and identify the following two sketchpads:
+
+- Pract_Target
+
+- Simon_Target
+
+Choose Pract_Target and you will see something like this:
+
+```{r Figure2-5, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'This is what the Target display looks like in the experiment file.'}
+
+knitr::include_graphics('images/changesimon/01Pract_Target.PNG')
+```
+
+Now we want to switch to the script view, by clicking on the functions framed in red below:
+
+```{r Figure2-6, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Every step of the experiment is based on an underlying script. This is the script that displays the targets, i.e. the coloured squares.'}
+
+knitr::include_graphics('images/changesimon/02Script.png')
+```
+
+You will also notice some "show_if" statements framed in orange. These relate back to the Pract_Simon loop in which we tell Open Sesame that we want four types of stimuli: a green square presented on the left or right, and a red square presented on the left or right. Now let's say we want this to change so that an arrow instead of a square is presented, e.g. like in Stoet (2017).
+
+Our first step is to go back to choose **"View Controls"** (between red frames in the picture above). When you are back in the control view, click on the green squares and delete them.
+
+
+```{r Figure2-7, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'The first step to change the task from squares to arrows is to remove the squares from the target display.'}
+
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output('\\url{....}')
+} else {
+knitr::include_graphics('images/changesimon/Simon1.gif')
+}
+```
+
+
+Once the squares have been removed, we can draw arrows to replace them. You can play around with the different settings to shape the arrow to your liking. Once the arrows are drawn, they can be moved around in the Control view to place them where you want them to be.
+
+
+```{r Figure2-8, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'The first step to change the task from squares to arrows is to remove the squares from the target display.'}
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output('\\url{....}')
+} else {
+knitr::include_graphics('images/changesimon/Simon2.gif')
+}
+```
+
+We want to draw four arrows: two positioned on the left, two positioned on the right. The two arrows on each side of the screen should point into opposite directions, i.e. one points left, one points right. The arrow task version usually does not require differently coloured arrows and arrows tend to be black. You can change the colour in the the script view or in the controls view (see Figure 5.9. below).
+
+```{r Figure2-9, out.width = '60%', fig.align = 'center', echo = FALSE, fig.cap = 'You can change the colour of the displayed arrows in the script or control view.'}
+
+knitr::include_graphics('images/changesimon/03SimonColour.png')
+```
+
+Because the arrows overlap in the control view, it can be difficult to tell them apart. However, we need to make sure that we assign the right "show if" argument to each arrow. One way to make this a little easier is to temporarily give each arrow a different colour.
+
+```{r Figure2-10, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Draw two arrows in the same locatio that point into the opposite direction but are in the same location. To make it easier to tell the arrows apart in the script view, we can change their colour.'}
+
+if (knitr:::is_latex_output()) {
+  knitr::asis_output('\\url{....}')
+} else {
+knitr::include_graphics('images/changesimon/Simon4.gif')
+}
+```
+
+Choose colours you will find easy to tell apart. The example below uses "red", "green", "pink" and "blue." If we click on script view, we can clearly see which arrow is which.
+
+```{r Figure2-11, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Close up of the four arrow colours and how they relate to the code we see in the script view.'}
+
+knitr::include_graphics('images/changesimon/04colours.PNG')
+```
+
+The next step depends on what specifically you want to ask your participants to do. For the example, we want participant to respond with Z if the arrow points left and with M if the arrow points right. To reflect this change in task, we need to change the "stimuli" column in the loop element:
+
+```{r Figure2-12, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'We need to change the stimuli column in the loop to reflect the change in stimuli.'}
+
+knitr::include_graphics('images/changesimon/06Loop.png')
+```
+
+The system used to name the stimuli lists the location of the arrow first, followed by its direction. Thus "rightleft" will draw an arrow on the right side of the screen that points towards the left. This means we also need to change the correct response in two cases (framed in green). Now that we have defined this in the loop, we can make the appropriate changes in the target sketchpad. There are two ways to do this. 
+
+**Option 1: Script view**
+
+Go into script view and change "show_if" so that the arrows are only drawn when we want them to be drawn. You will be able to tell them apart based on their colour.
+
+```{r Figure2-13, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'One way to adjust the show if statement is by changing it in the script.'}
+
+knitr::include_graphics('images/changesimon/07script.png')
+```
+
+After this is done, you can change to colour of all arrows to black.
+
+**Option 2: Control view**
+
+In the control view, click on each arrow and change the "show if" statement. The arrow you have selected will have a green shadow. If you choose this method, you need to be particularly careful to choose the correct arrow.
+
+```{r Figure2-14, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'We can also change the show if statement in the control view.'}
+
+knitr::include_graphics('images/changesimon/08option2.PNG')
+```
+
+Once you have completed these steps, do the same for the Simon_Block loop and the Simon_Target sketchpad in the experimental block. 
+
+**Remember to change the instructions. Hint: You can copy-paste the script to the sketchpad in the experiment block but you still need to change the loop in the experimental block.**
+
+
+
+### Change the response keys
+
+If you want to change the response keys, the first step is to change them in the loop.
+
+```{r Figure2-15, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'To change the required responses, change the correct response in the loop element.'}
+
+knitr::include_graphics('images/changesimon/09response1.png')
+```
+
+The second step is to change the accepted responses in the keyboard response.
+
+```{r Figure2-16, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'The second step is to change the responses we allow in the keyboard element.'}
+
+knitr::include_graphics('images/changesimon/10response2.png')
+```
+
+Once you have done this for the practice block, remember to do the same for the experimental block and to change the instructions accordingly.
+
+
+**Simon Task References**
+
+Stoet, G. (2017). Sex differences in the Simon task help to interpret sex differences in selective attention. *Psychological Research, 81*(3), 571-581.
+
+
+## Stroop Task
+
+The Stroop Task (Stroop, 1935) is an interference control task that requires participants to identify the font colour in which colour words are written in. The word and the font colour can be  either congruent, e.g. <span style="color: red;">RED</span>, or incongruent, e.g. <span style="color: green;">BLUE</span>. On incongruent trials, reaction time generally increases while accuracy decreases. The difference in performance between congruent and incongruent trials is also referred to as the Stroop Effect. 
+
+**Formats**
+
+The Stroop Task is available for Open Sesame: 
+
+[Open Sesame Online and Offline](link here) 
+
+### How to change the words and/or colours
+
+To change either the words that are displayed or the colour they are displayed in, you need to locate the Pract_Stroop and Stroop_Loop in the experiment file. The Figure below explains what each column defines.
+
+```{r Figure2-17, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Overview of what wach column in the Pract_Stroop loop defines.'}
+
+knitr::include_graphics('images/changestroop/01loop.PNG')
+```
+
+If you want to change the word that is displayed, for example from "RED" to "PURPLE", the words in the first column (framed in orange) needs to be changed. If you want to change the font colour, for example from <span style="color: red;">RED</span> to <span style="color: green;">RED</span>, this needs to be done in the second column, framed in yellow. Instead of colour names, you can also enter [Hex Colour Codes](https://htmlcolorcodes.com/) to define the font colour. Remember that the changes you make need to reflected by the instructions you give to participants.
+
+
+
+## Inhibition of Return
+
+For inhibition of return (IOR) tasks, participants are expected to identify the location in which a target appeared (often right vs left side of a computer screen). The target is preceded by a cue, which appears in the same location (valid cues) or in a different location (invalid cues). If the target appears within less than 300ms after the cue, participants respond fasterand with higher accuracy on trials with valid cues (i.e. target appears in the cued location) than on trials with invalid cues (Klein, 2000; Posner, & Cohen, 1984). If more than 300ms lie between the cue and the target, the opposite is the case: participants respond faster if the target appears on the opposite side of where the cue appeared. In other words, if the delay between cue and target is longer than 300ms, people respond faster on invalid trials. This is also known as 'validity effect.' 
+
+Thus, if the cue appears after more than around 300ms, we appear to experience suppression of our ability to orient attention to the cued location. This suppression is the "inhibition of return" (e.g. to that display location). Posner and Cohen (1984) suggested that IOR facilitates the detection of novel information and may thus aid **visual search**.
+
+**Formats**
+
+The task is available for Open Sesame: 
+
+[Open Sesame Online and Offline](link here) 
+
+
+**Things you will need to know for your Methods section**
+
+Targets can appear 50ms, 200ms, 500ms or 800ms after the cue. You can change this by opening **"Pract_InhibitionOfReturn_loop"** and **"InhibitionOfReturn_loop"** and changing the values in the **"SOA"** column.
+
+The paradigm used in the Open Sesame task is based on Zhao and Heinke (2014) but not identical to it.
+
+
+**References**
+
+Klein, R. M. (2000). Inhibition of return. *Trends in Cognitive Sciences, 4*(4), 138-147.
+
+Posner, M. I. , & Cohen, Y. (1984). Components of visual orienting. In: Bouma H, Bouwhuis DG, editors. Attention and Performance X: Control of Language Processes. X. London: Lawrence Erlbaum
+
+Zhao, Y., & Heinke, D. (2014). What causes IOR? Attention or perception?–Manipulating cue and target luminance in either blocked or mixed condition. *Vision Research, 105*, 37-46.
+
+
+

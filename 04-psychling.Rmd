@@ -46,5 +46,12 @@ Laurence, P. G., Pinto, T. M., Rosa, A. T. F., & Macedo, E. C. (2018). Can a lex
 
 ## Assessig Degree of Bilingualism
 
-LSBQ
+The Language and Social Background Questionnaire (LSBQ) aims to provide an indication of how bilingual or monolingual a person is. It considers how frequently people use different languages, how proficient they are, and in what contexts they use different languages.
 
+**Formats**
+
+The LSBQ is analysed through an Excel spreadsheet, which can be downloaded [here](https://figshare.com/articles/The_Language_and_Social_Background_Questionnaire_Assessing_Degree_of_Bilingualism_in_a_Diverse_Population_Supplementary_Materials/3972486). Along with the Excel spreadsheet, a PDF in English is available.
+
+**References for LSBQ**
+
+Anderson, J. A., Mak, L., Chahi, A. K., & Bialystok, E. (2018). The language and social background questionnaire: Assessing degree of bilingualism in a diverse population. Behavior research methods, 50(1), 250-263.
