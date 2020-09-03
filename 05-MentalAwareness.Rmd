@@ -45,7 +45,7 @@ For example, for object 20, the two pictures in which the second object was rota
 
 **References**
 
-Ganis, G., & Kievit, R. (2015). A new set of three-dimensional shapes for investigating mental rotation processes: validation data and stimulus set. *Journal of Open Psychology Data, 3*, e3: Retrieved from: https://openpsychologydata.metajnl.com/articles/10.5334/jopd.ai/
+Ganis, G., & Kievit, R. (2015). [A new set of three-dimensional shapes for investigating mental rotation processes: validation data and stimulus set.](https://openpsychologydata.metajnl.com/articles/10.5334/jopd.ai/) *Journal of Open Psychology Data, 3*, e3
 
 
 

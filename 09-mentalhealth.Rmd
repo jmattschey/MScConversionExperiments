@@ -57,9 +57,9 @@ The AMAS and mAMAS can be downloaded as Qualtrics and Word file:
 
 **Source:**
 
-Carey, E., Hill, F., Devine, A., & Szűcs, D. (2017). The modified abbreviated math anxiety scale: A valid and reliable instrument for use with children. Frontiers in psychology, 8, 11.
+Carey, E., Hill, F., Devine, A., & Szűcs, D. (2017). [The modified abbreviated math anxiety scale: A valid and reliable instrument for use with children.](https://www.frontiersin.org/articles/10.3389/fpsyg.2017.00011/full) *Frontiers in Psychology, 8*, 11.
 
-Hopko, D. R., Mahadevan, R., Bare, R. L., & Hunt, M. K. (2003). The abbreviated math anxiety scale (AMAS) construction, validity, and reliability. *Assessment, 10(2)*, 178-182.
+Hopko, D. R., Mahadevan, R., Bare, R. L., & Hunt, M. K. (2003). [The abbreviated math anxiety scale (AMAS) construction, validity, and reliability.](https://www.researchgate.net/profile/Stephen_Joy/post/Hello_Can_anyone_tell_me_how_to_access_the_Abbreviated_Math_Anxiety_Scale_developed_by_Derek_Hopko2/attachment/59d624eb79197b80779833c8/AS:315374518636545@1452202552608/download/Math+Anxiety+Scale+Abbreviated+2003.pdf) *Assessment, 10(2)*, 178-182.
 
 
 
@@ -97,7 +97,7 @@ Qualtrics and paper-based versions of the AQ-10 can be downloaded for children, 
 
 **Source:**
 
-Allison, C., Auyeung, B., & Baron-Cohen, S. (2012). Toward Brief "Red Flags" for Autism Screening: The Short Autism Spectrum Quotient and the Short Quantitative Checklist in 1,000 Cases and 3,000 Controls. *Journal of the American Acad of Child & Adolescent Psychiatry, 51*(2), 202-212.
+Allison, C., Auyeung, B., & Baron-Cohen, S. (2012). [Toward Brief "Red Flags" for Autism Screening: The Short Autism Spectrum Quotient and the Short Quantitative Checklist in 1,000 Cases and 3,000 Controls.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.232.4537&rep=rep1&type=pdf) *Journal of the American Acad of Child & Adolescent Psychiatry, 51*(2), 202-212.
 
 
 ## Internet and Social Media related
@@ -119,7 +119,7 @@ You can download the PIUQ as a Microsoft Word or as a Qualtrics file.
 
 **Source:**
 
-Demetrovics, Z., Szeredi, B., & Rózsa, S. (2008). The three-factor model of Internet addiction: The development of the Problematic Internet Use Questionnaire. *Behavior Research Methods, 40*, 563-574.
+Demetrovics, Z., Szeredi, B., & Rózsa, S. (2008). [The three-factor model of Internet addiction: The development of the Problematic Internet Use Questionnaire.](https://link.springer.com/content/pdf/10.3758/BRM.40.2.563) *Behavior Research Methods, 40*, 563-574.
 
 
 ## General Mental Health
@@ -157,9 +157,8 @@ You can download the PIUQ as a Microsoft Word or as a Qualtrics file.
 
 **Source:**
 
-Keyes, C. L. (2002). The mental health continuum: From languishing to flourishing in life. *Journal of Health and Social Behavior,* 207-222.
+Keyes, C. L. (2002). [The mental health continuum: From languishing to flourishing in life.](https://www.researchgate.net/profile/Corey_Keyes/publication/11278728_The_Mental_Health_Continuum_From_Languishing_to_Flourishing_in_Life/links/0046352b1a6f89da77000000/The-Mental-Health-Continuum-From-Languishing-to-Flourishing-in-Life.pdf) *Journal of Health and Social Behavior,* 207-222.
 
-Keyes, C. L. (2009). Brief description of the mental health continuum short form (MHC-SF). Retrieved from: https://www.aacu.org/sites/default/files/MHC-SFEnglish.pdf
-
+Keyes, C. L. (2009). [Brief description of the mental health continuum short form (MHC-SF).](https://www.aacu.org/sites/default/files/MHC-SFEnglish.pdf)
 
 

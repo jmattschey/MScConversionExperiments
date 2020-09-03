@@ -5,14 +5,14 @@ Attentional Network Tasks (ANTs) aim to assess performance in relation to the th
 
 The ANT included in this experiment library is based on the task version proposed by Fan, McCandliss, Sommer, Raz, and Posner (2002). The task includes five different cues. Some inform the participant that a target is about to appear and where. Others only let the the participant know that the target will appear shortly but not where. Finally, on some trials, the target will appear without a cue preceding it. Figure 5.2. shows the overview of cues participants see prior to starting the experiment.
 
-```{r Figure2-2, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Targets can be preceded by five different types of cues.'}
+```{r Figure3-2, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Targets can be preceded by five different types of cues.'}
 
 knitr::include_graphics('images/ANT_Cues.PNG')
 ```
 
 The targets in this task version are arrows, which can appear either above or below the fixation cross. They are surrounded by distractor stimuli, which can either be congruent (i.e. arrows pointing in the same direction), incongruent (i.e. arrows pointing in the opposite direction), or neutral (in this case, a line or dash). Figure 5.3. shows the different types of target displays as they are explained to the participant.
 
-```{r Figure2-3, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Targets can be surrounded by congruent, incongruent, or neutral stimuli.'}
+```{r Figure3-3, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Targets can be surrounded by congruent, incongruent, or neutral stimuli.'}
 
 knitr::include_graphics('images/ANT_Targets.PNG')
 ```
@@ -37,13 +37,22 @@ The task is available in two different Open Sesame formats:
 
 The ANT designed by Fan et al. (2002) displays the first fixation cross of each trial for 400-1600ms, which is determined randomly. The display duration of the last fixation cross is determined by subtracting the duration of the first fixation cross from 3500ms. So if the first fixation cross was on screen for 500ms, the last fixation cross would be displayed for 3000ms, because 3500 - 500 = 3000. To randomly calculate these numbers, each Open Sesame file has an inline script. For the online version, it is written in Javascript, for the offline version in Python.
 
+**ANT References**
+
+Eriksen, B. A., & Eriksen, C. W. (1974). [Effects of noise letters upon the identification of a target letter in a nonsearch task.](https://link.springer.com/content/pdf/10.3758/BF03203267.pdf) *Perception & Psychophysics, 16*(1), 143-149.
+
+Fan, J., McCandliss, B. D., Sommer, T., Raz, A., & Posner, M. I. (2002). [Testing the efficiency and independence of attentional networks.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.474.442&rep=rep1&type=pdf) *Journal of Cognitive Neuroscience, 14*(3), 340-347.
+
+Posner, M. I., & Petersen, S. E. (1990). [The attention system of the human brain.](https://apps.dtic.mil/dtic/tr/fulltext/u2/a206157.pdf) *Annual Review of Neuroscience, 13*(1), 25-42.
+
+
 
 ## Simon Task
 
 The Simon Task is based on the observation that people respond faster and with higher accuracy if the stimulus they respond to and the required response share features, for example, location (Simon, & Wolf, 1963; Simon, & Rudell, 1967). One version of the task requires participants to identify the colour of squares (e.g. Gulbinaite, van Rijn, & Cohen, 2014). Figure 5.4. shows an example of such a task. Squares are either presented on the right or left side of the screen. The response keys, M and Z, are located on the left and right side of the keyboard (if we are using a QWERTY keyboard). This means the response location (left vs. right) and the presentation location (left vs. right) can either match or mismatch. 
 
 
-```{r Figure2-4, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Example sequence of a Simon Task with coloured squares.'}
+```{r Figure3-4, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Example sequence of a Simon Task with coloured squares.'}
 
 knitr::include_graphics('images/SimonTaskExample.PNG')
 ```
@@ -69,14 +78,14 @@ Open the Simon Task and identify the following two sketchpads:
 
 Choose Pract_Target and you will see something like this:
 
-```{r Figure2-5, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'This is what the Target display looks like in the experiment file.'}
+```{r Figure3-5, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'This is what the Target display looks like in the experiment file.'}
 
 knitr::include_graphics('images/changesimon/01Pract_Target.PNG')
 ```
 
 Now we want to switch to the script view, by clicking on the functions framed in red below:
 
-```{r Figure2-6, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Every step of the experiment is based on an underlying script. This is the script that displays the targets, i.e. the coloured squares.'}
+```{r Figure3-6, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Every step of the experiment is based on an underlying script. This is the script that displays the targets, i.e. the coloured squares.'}
 
 knitr::include_graphics('images/changesimon/02Script.png')
 ```
@@ -86,7 +95,7 @@ You will also notice some "show_if" statements framed in orange. These relate ba
 Our first step is to go back to choose **"View Controls"** (between red frames in the picture above). When you are back in the control view, click on the green squares and delete them.
 
 
-```{r Figure2-7, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'The first step to change the task from squares to arrows is to remove the squares from the target display.'}
+```{r Figure3-7, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'The first step to change the task from squares to arrows is to remove the squares from the target display.'}
 
 
 if (knitr:::is_latex_output()) {
@@ -100,7 +109,7 @@ knitr::include_graphics('images/changesimon/Simon1.gif')
 Once the squares have been removed, we can draw arrows to replace them. You can play around with the different settings to shape the arrow to your liking. Once the arrows are drawn, they can be moved around in the Control view to place them where you want them to be.
 
 
-```{r Figure2-8, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'The first step to change the task from squares to arrows is to remove the squares from the target display.'}
+```{r Figure3-8, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'The first step to change the task from squares to arrows is to remove the squares from the target display.'}
 
 if (knitr:::is_latex_output()) {
   knitr::asis_output('\\url{....}')
@@ -111,14 +120,14 @@ knitr::include_graphics('images/changesimon/Simon2.gif')
 
 We want to draw four arrows: two positioned on the left, two positioned on the right. The two arrows on each side of the screen should point into opposite directions, i.e. one points left, one points right. The arrow task version usually does not require differently coloured arrows and arrows tend to be black. You can change the colour in the the script view or in the controls view (see Figure 5.9. below).
 
-```{r Figure2-9, out.width = '60%', fig.align = 'center', echo = FALSE, fig.cap = 'You can change the colour of the displayed arrows in the script or control view.'}
+```{r Figure3-9, out.width = '60%', fig.align = 'center', echo = FALSE, fig.cap = 'You can change the colour of the displayed arrows in the script or control view.'}
 
 knitr::include_graphics('images/changesimon/03SimonColour.png')
 ```
 
 Because the arrows overlap in the control view, it can be difficult to tell them apart. However, we need to make sure that we assign the right "show if" argument to each arrow. One way to make this a little easier is to temporarily give each arrow a different colour.
 
-```{r Figure2-10, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Draw two arrows in the same locatio that point into the opposite direction but are in the same location. To make it easier to tell the arrows apart in the script view, we can change their colour.'}
+```{r Figure3-10, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Draw two arrows in the same locatio that point into the opposite direction but are in the same location. To make it easier to tell the arrows apart in the script view, we can change their colour.'}
 
 if (knitr:::is_latex_output()) {
   knitr::asis_output('\\url{....}')
@@ -129,14 +138,14 @@ knitr::include_graphics('images/changesimon/Simon4.gif')
 
 Choose colours you will find easy to tell apart. The example below uses "red", "green", "pink" and "blue." If we click on script view, we can clearly see which arrow is which.
 
-```{r Figure2-11, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Close up of the four arrow colours and how they relate to the code we see in the script view.'}
+```{r Figure3-11, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Close up of the four arrow colours and how they relate to the code we see in the script view.'}
 
 knitr::include_graphics('images/changesimon/04colours.PNG')
 ```
 
 The next step depends on what specifically you want to ask your participants to do. For the example, we want participant to respond with Z if the arrow points left and with M if the arrow points right. To reflect this change in task, we need to change the "stimuli" column in the loop element:
 
-```{r Figure2-12, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'We need to change the stimuli column in the loop to reflect the change in stimuli.'}
+```{r Figure3-12, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'We need to change the stimuli column in the loop to reflect the change in stimuli.'}
 
 knitr::include_graphics('images/changesimon/06Loop.png')
 ```
@@ -147,7 +156,7 @@ The system used to name the stimuli lists the location of the arrow first, follo
 
 Go into script view and change "show_if" so that the arrows are only drawn when we want them to be drawn. You will be able to tell them apart based on their colour.
 
-```{r Figure2-13, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'One way to adjust the show if statement is by changing it in the script.'}
+```{r Figure3-13, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'One way to adjust the show if statement is by changing it in the script.'}
 
 knitr::include_graphics('images/changesimon/07script.png')
 ```
@@ -158,7 +167,7 @@ After this is done, you can change to colour of all arrows to black.
 
 In the control view, click on each arrow and change the "show if" statement. The arrow you have selected will have a green shadow. If you choose this method, you need to be particularly careful to choose the correct arrow.
 
-```{r Figure2-14, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'We can also change the show if statement in the control view.'}
+```{r Figure3-14, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'We can also change the show if statement in the control view.'}
 
 knitr::include_graphics('images/changesimon/08option2.PNG')
 ```
@@ -173,14 +182,14 @@ Once you have completed these steps, do the same for the Simon_Block loop and th
 
 If you want to change the response keys, the first step is to change them in the loop.
 
-```{r Figure2-15, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'To change the required responses, change the correct response in the loop element.'}
+```{r Figure3-15, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'To change the required responses, change the correct response in the loop element.'}
 
 knitr::include_graphics('images/changesimon/09response1.png')
 ```
 
 The second step is to change the accepted responses in the keyboard response.
 
-```{r Figure2-16, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'The second step is to change the responses we allow in the keyboard element.'}
+```{r Figure3-16, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'The second step is to change the responses we allow in the keyboard element.'}
 
 knitr::include_graphics('images/changesimon/10response2.png')
 ```
@@ -190,7 +199,14 @@ Once you have done this for the practice block, remember to do the same for the 
 
 **Simon Task References**
 
-Stoet, G. (2017). Sex differences in the Simon task help to interpret sex differences in selective attention. *Psychological Research, 81*(3), 571-581.
+
+Gulbinaite, R., van Rijn, H., & Cohen, M. X. (2014). [Fronto-parietal network oscillations reveal relationship between working memory capacity and cognitive control.](https://www.frontiersin.org/articles/10.3389/fnhum.2014.00761/full) *Frontiers in Human Neuroscience, 8*, 761.
+
+Simon, J. R., & Rudell, A. P. (1967). [Auditory SR compatibility: the effect of an irrelevant cue on information processing.](https://suprimo.lib.strath.ac.uk/permalink/f/1jihtat/TN_cdi_proquest_journals_614414775) *Journal of Applied Psychology, 51*(3), 300.
+
+Simon, J. R., & Wolf, J. D. (1963). [Choice reaction time as a function of angular stimulus-response correspondence and age.] (https://www.tandfonline.com/doi/abs/10.1080/00140136308930679) *Ergonomics, 6*(1), 99-105.
+
+Stoet, G. (2017). [Sex differences in the Simon task help to interpret sex differences in selective attention.](https://link.springer.com/content/pdf/10.1007/s00426-016-0763-4.pdf) *Psychological Research, 81*(3), 571-581.
 
 
 ## Stroop Task
@@ -207,13 +223,16 @@ The Stroop Task is available for Open Sesame:
 
 To change either the words that are displayed or the colour they are displayed in, you need to locate the Pract_Stroop and Stroop_Loop in the experiment file. The Figure below explains what each column defines.
 
-```{r Figure2-17, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Overview of what wach column in the Pract_Stroop loop defines.'}
+```{r Figure3-17, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Overview of what wach column in the Pract_Stroop loop defines.'}
 
 knitr::include_graphics('images/changestroop/01loop.PNG')
 ```
 
 If you want to change the word that is displayed, for example from "RED" to "PURPLE", the words in the first column (framed in orange) needs to be changed. If you want to change the font colour, for example from <span style="color: red;">RED</span> to <span style="color: green;">RED</span>, this needs to be done in the second column, framed in yellow. Instead of colour names, you can also enter [Hex Colour Codes](https://htmlcolorcodes.com/) to define the font colour. Remember that the changes you make need to reflected by the instructions you give to participants.
 
+**Stroop References**
+
+Stroop, J. R. (1935). [Studies of interference in serial verbal reactions.](https://pure.mpg.de/rest/items/item_2389918/component/file_2389917/content) *Journal of Experimental Psychology, 18*(6), 643.
 
 
 ## Inhibition of Return
@@ -238,11 +257,11 @@ The paradigm used in the Open Sesame task is based on Zhao and Heinke (2014) but
 
 **References**
 
-Klein, R. M. (2000). Inhibition of return. *Trends in Cognitive Sciences, 4*(4), 138-147.
+Klein, R. M. (2000). [Inhibition of return.](https://www.researchgate.net/profile/Juan_Lupianez/publication/233995999_Inhibition_of_Return/links/0c960525d778745c66000000/Inhibition-of-Return.pdf) *Trends in Cognitive Sciences, 4*(4), 138-147.
 
-Posner, M. I. , & Cohen, Y. (1984). Components of visual orienting. In: Bouma H, Bouwhuis DG, editors. Attention and Performance X: Control of Language Processes. X. London: Lawrence Erlbaum
+Posner, M. I. , & Cohen, Y. (1984). *Components of visual orienting.* In: Bouma H, Bouwhuis DG, editors. Attention and Performance X: Control of Language Processes. X. London: Lawrence Erlbaum
 
-Zhao, Y., & Heinke, D. (2014). What causes IOR? Attention or perception?–Manipulating cue and target luminance in either blocked or mixed condition. *Vision Research, 105*, 37-46.
+Zhao, Y., & Heinke, D. (2014). [What causes IOR? Attention or perception?–Manipulating cue and target luminance in either blocked or mixed condition.](https://core.ac.uk/download/pdf/185482615.pdf) *Vision Research, 105*, 37-46.
 
 
 

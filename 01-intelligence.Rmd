@@ -81,14 +81,12 @@ The files for Set A and Set B both contain an example as part of the task instru
 Watts, Baddeley, and Williams (1982) found that a shortened version of the multiple-choice part of the Mill Hill Vocabulary Scale produced reliable findings. If you want to remove items, please follow the process outlined in *Shortening Raven's Advanced Progressive Matrices.*
 
 
-**Further Reading**
-
-(Matarazzo, 1990). 
 
 **Mill Hill References**
 
-Raven, J. C. (1958). *Guide to using the Mill Hill Vocabulary Scale with the Progressive Matrices Scales.* H. K. Lewis & Co..
+Raven, J. C. (1958). *Guide to using the Mill Hill Vocabulary Scale with the Progressive Matrices Scales.* H. K. Lewis & Co.
 
+Matarazzo, J. D. (1990). [Psychological assessment versus psychological testing.](https://www.gwern.net/docs/psychology/1990-matarazzo.pdf) *American Psychologist, 45*, 999–1017.
 
 ## Coloured Progressive Matrices
 

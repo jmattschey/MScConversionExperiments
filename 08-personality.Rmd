@@ -3,43 +3,279 @@
 
 ## Big 5 
 
-### Ten Item Personality Inventory (TIPI)
+The 'Big 5' is a term that relates to five personality dimensions: Extraversion, 
+Conscientiousness, Openness, Agreeableness and Neuroticism. Neuroticism is also sometimes called 'emotional stability.' Several different questionnaires have been developed to study the Big 5, including the TIPI described below.
+
+### Ten-Item Personality Inventory (TIPI)
+
+The TIPI is a short questionnaire that can be used to study the Big 5 personality dimensions. It was developed by Gosling, Rentfrow, and Swann (2003).
+
+
+**How to use the TIPI**
+
+The TIPI includes, as the name suggests, 10 items. Each item asks participants to rate their response on a scale from 1 (Disagree strongly) to 7 (Agree Strongly). The TIPI includes two items related to each personality dimension, including one that is scored in reverse (marked by the R behind the item number below).
+
+- *Extraversion*: 1, 6R
+- *Agreeableness:* 2R, 7
+- *Conscientiousness:* 3, 8R
+- *Neuroticism:* 4R, 9
+
+
+The positively scored item is simply scored by recording the number the participant indicated. For example, if a participant strongly disagreed with a statement, we would record "1" as the value for that question.  If the item is scored in reverse, "strongly disagree" would be scored with a 7 instead.
+
+*Converting the reverse items:*
+
+1=7; 2=6; 3=5;, 4=4; 5=3; 6=2; 7=1
+
+**Formats**
+
+The TIPI can be downloaded in the following formats:
+
+[Word](link to file) | [Qualtrics](link to file)
+
+**Source:**
+
+Gosling, S. D., Rentfrow, P. J., & Swann Jr., W. B. (2003). [A very brief measure of the Big-Five personality domains.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.113.6704&rep=rep1&type=pdf) *Journal of Research in Personality, 37,* 504-528.
+
 
 
 ## Emotions
 
 ### Humor Styles Questionnaire (HSQ)
 
-Humour is considered an emotional measure. It can 
+Humour is considered an emotional measure. It is possible to distingush between different kinds of humour, for example, sarcasm or banter. The Humor Styles Questionnaire (HSQ) was developed by Marting et al. (2003) and distinguishes four styles of humour:
+
+1. *Self-enhancing Humour:* Humour used to enhance the self, without any detriment to the self or others 
+2. *Affiliative Humour:* Humour used to enhance the relationship with other people
+3. *Aggressive Humour:* Use of humour to the detriement/at the expense of others
+4. *Self-defeating Humour:* Use of humour to the detriement/at the expense of the self
+
+
+**How to use the HSQ**
+
+The HSQ contains 32 items and each type of humour is measured by 8 of these. Each item is scored from 1 (Totally Disagree) to 7 (Totally Agree). Some of these items are scored in reverse (marked by an R in the list below). For example, if a participants chooses "3" (Slightly Disagree") for a reverse item, we would use 5 as the score.
+
+*Converting the reverse items:*
+
+1=7; 2=6; 3=5;, 4=4; 5=3; 6=2; 7=1
+
+Items for each subscale:
+
+- *Affiliative Humor:* 1R, 5, 9R, 13, 17R, 21, 25R, 29R
+- *Self-Enhancing Humor:* 2, 6, 10, 14, 18, 22R, 26, 30
+- *Aggressive Humor:* 3, 7R, 11, 15R, 19, 23R, 27, 31R
+- *Self-Defeating Humor:* 4, 8, 12, 16R, 20, 24, 28, 32
+
+
+**Formats**
+
+The HSQ can be downloaded as paperbased version or for Qualtrics.
+
+[Word](link to file) | [Qualtrics](link to file)
 
 
 **Source:**
-Martin, R.A., Puhlik-Doris, P., Larsen, G., Gray, J., and Weir, K. (2003). Individual differences in uses of humor and their relation to psychological well-being: Development of the Humor Styles Questionnaire. *Journal of Research in Personality, 37*, 48-75.
+
+Martin, R.A., Puhlik-Doris, P., Larsen, G., Gray, J., & Weir, K. (2003). [Individual differences in uses of humor and their relation to psychological well-being: Development of the Humor Styles Questionnaire.](https://d1wqtxts1xzle7.cloudfront.net/56892479/HSQ_article.pdf?1530281324=&response-content-disposition=inline%3B+filename%3DIndividual_differences_in_uses_of_humor.pdf&Expires=1598969255&Signature=c2oQ1bWDYeWlwZslWOqrGvNdgjeYek-qW6UbPTZVWozQfdWJ8HAKPZHZRSACz1mNY6TYSVsbQgCYsC~1vG7IWPHEnUyQtT2cWsljBOMDj-m6KECtv9OSsQqBWQqTbOQbaGbyRGaCJbbdYEPr4uNZM8zVWZWB0cQU105xtYzzrqyrEQvnR-8x7Y2-7pCwPBMptT8CLRgiv4~WEz1auOoHClqgZ0pAg6Qe8oTVIYFaX40f0gT2At1JKH-xmb1-IHX7wWz9zux-3WMYZ0~jNi4kruIbEHnSS6HrAmF-sin3lWpItwnvWRJ2XbJEFvaU3HqsWTdmsM2WpnIwBQ8I5mCKpw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA) *Journal of Research in Personality, 37*, 48-75.
 
 ### Oxford Happiness Questionnaire (OHQ)
 
+As the name suggests, the Oxford Happiness Questionnaire (OHQ) aims to measure happiness. It was developed by Hills and Argyle (2002), based on the Oxford Happiness Inventory. The QHQ contains 29 items, however, a Hills and Argyle (2002) found that a subset of eight items was suitable to classify around 90% of responses accurately.
+
+
+
+**How to use the QHQ**
+
+The QHQ contains 29 items, each of which participants score between 1 (strongly disagree) to 6 (strongly agree). Twelve of these items are scored in reverse. 
+
+*The following items are scored in reverse:*
+
+1, 5, 6, 10, 13, 14, 19, 23, 24, 27, 28, 29
+
+*Converting the reverse items:*
+
+1=6; 2=5; 3=4;, 4=3; 5=2; 6=1
+
+
+The items included in the **8-item version** proposed by Hills and Argyle (2002) are: 1, 3, 12, 13, 16, 18, 21, and 29
+
+
+**Formats**
+
+The QHQ is available in the following versions:
+
+[Word](link to file) | [Qualtrics](link to file)
+
+**Source**
+
+Hills, P., & Argyle, M. (2002). [The Oxford Happiness Questionnaire: a compact scale for the measurement of psychological well-being.](https://pdfs.semanticscholar.org/cadd/7a4eea79e031ec0cf8b8054f668057f33dda.pdf) *Personality and Individual Differences, 33*(7), 1073-1082.
 
 
 ### Satisfaction with life scale (SWLS)
 
+The Satisfaction with life scale (SWLS) was developed by Diener, Emmons, Larsen, and Griffin (1985). It aims to measure how satisfied someone is with their life in general. 
 
+As mentioned in Chapter 8, you should always cite the source of a questionnaire but it is worth noting the official re-use statement from the [official SWLS website](http://labs.psychology.illinois.edu/~ediener/SWLS.html):
+
+*'The scale is copyrighted but you are free to use it without permission or charge by all professionals (researchers and practitioners) as long as you give credit to the authors of the scale: Ed Diener, Robert A. Emmons, Randy J. Larsen and Sharon Griffin as noted in the 1985 article in the Journal of Personality Assessment.'*
+
+
+**How to use the SWLS**
+
+Each of the five items included in the SWLS is rated on a 1 (Strongly disagree) to 7 (Strongly Agree). There are **no** reverse items included in the scale, thus, the possible scores range from 5 to 35.
+
+Diener et al. (1985) propose the following classifications:
+
+- *5 to 9:* Extremely Dissatisfied
+- *10 to 14:* Dissatisfied
+- *15 to 19:* Slightly below average life satisfaction
+- *20 to 24:* Average score/Average life satisfaction
+- *25 to 29:* High score/High life satisfaction
+- *30 to 35:* Very high score/ Very high life satisfaction
+
+A detailed guide on how to interpret the findings can be found on the [official SWLS website](http://labs.psychology.illinois.edu/~ediener/SWLS.html).
+
+Kobau et al. (2010) developed a version of the SWLS with a 5-point response scale, which may be of interest to some.
+
+**Formats**
+
+The SWLS can be downloaded from the [official website](http://labs.psychology.illinois.edu/~ediener/SWLS.html), in a wide range of different lanuages.
+
+[Qualtrics](link to file)
+
+**Source & References**
+
+Diener, E., Emmons, R. A., Larsen, R. J., & Griffin, S. (1985). [The Satisfaction with Life Scale.](https://emmons.faculty.ucdavis.edu/wp-content/uploads/sites/90/2015/08/1985_5-SWLS.pdf) *Journal of Personality Assessment, 49*, 71-75.
+
+Kobau, R., Sniezek, J., Zack, M. M., Lucas, R. E., & Burns, A. (2010). [Well‐being assessment: An evaluation of well‐being scales for public health and population estimates of well‐being among US adults](https://iaap-journals.onlinelibrary.wiley.com/doi/abs/10.1111/j.1758-0854.2010.01035.x.*Applied Psychology: Health and Well-being, 2*(3), 272-297. 
 
 ## Relationships:
 
-###	Romantic jealousy (SF-MJS)
+###	Romantic Jealousy (Multi-dimensional Jealousy Scale)
+
+The Multi-Dimensional Jealousy Scale (MJS) was developed by Pfeiffer and Wong (1989) and aims to assess jealousy along three dimensions:
+
+1. *Cognitive Jealousy:* How frequently someone experiences thoughts or worries related to jealousy
+2. *Emotional Jealousy:* Feelings people experience in relation to jealousy
+3. *Behavioral Jealousy:* How often someone engages in jealous behaviour, e.g. checking a partner's private belongings.
+
+More recently, Elphinston, Feeney and Noller (2011) developed a shorter version of the MJS, which contains only 17 items instead of the 24 items included in the full MJS.
+
+**How to use the MJS**
+
+The MJS includes 8 items for each jelousy dimension, i.e. a total of 24 items. Participants are asked to rate their response on a scale from 1 to 7.
+
+For the items related to Cognitive Jealousy and Behavioural Jealousy, the response labels range from 1 (never) to 7 (all the time). For Emotional Jealousy, they range from 1 (very pleased) to 7 (very upset).
 
 
+**Formats**
+
+The MJS is available in the following formats:
+
+[Word](link to file) | [Qualtrics](link to file)
+
+It is worth mentioning that some items use the phrases such as *'attracted to the opposite sex'* and may need to be adapted for use with non-heterosexual participants.
+
+**Source:**
+
+
+Elphinston, R. A., Feeney, J. A., & Noller, P. (2011). [Measuring romantic jealousy: Validation of the multidimensional jealousy scale in Australian samples.](https://aps.onlinelibrary.wiley.com/doi/abs/10.1111/j.1742-9536.2011.00026.x) *Australian Journal of Psychology, 63*(4), 243-251.
+
+Pfeiffer, S. M., & Wong, P. T. P. (1989). [Multidimensional jealousy.](http://www.drpaulwong.com/wp-content/uploads/2018/03/Multidimensional-Jealousy-Scale-Pfeiffer-Wong-1989-Paper.pdf) *Journal of Social and Personal Relationships, 6*, 181-196.
 
 ### State Adult Attachment Measure (SAAM)
+
+Attachment styles can generally be described as Secure, Anxious, or Avoidant, with some researchers also differentiating between dismissive avoidant and fearful avoidant attachment styles. The State Adult Attachment Measure (SAAM) can be used to study attachment styles of adults.
+
+**How to use the SAAM**
+
+The SAAM contains 21 questions, which items relating to Secure, Anxious, and Avoidant behaviour. The Word document version of the questionnaire available from the [authors lab website](http://gillab.ku.edu/resources) clearly states which item relates to which sub-scale.
+
+The SAAM includes 7 items for each attachment style, which are rated on a scale from 1 (disagree strongly) to 7 (agree strongly). There are **no** reverse items included.
+
+**Formats**
+
+A Word document version of the SAAM can be downloaded from the [Gillath Lab website](http://gillab.ku.edu/resources)
+
+[Qualtrics](link to file)
+
+**Sources:**
+
+Gillath, O., Hart, J., Noftle, E. E., & Stockdale, G. D. (2009). [Development and validation of a state adult attachment measure (SAAM).](https://www.researchgate.net/profile/Omri_Gillath/publication/223185973_Development_and_validation_of_a_State_Adult_Attachment_Measure_SAAM/links/5a10d5c2458515cc5aa8073c/Development-and-validation-of-a-State-Adult-Attachment-Measure-SAAM.pdf) *Journal of Research in Personality, 43*, 362-373.
+
 
 
 ## Political Tendency:
 
-### Political conservatism scale
+### Social and Economic Conservatism Scale (SECS)
+
+What constitutes political conservatism varies often by geographical location. The Social and Economic Conservatism Scale (SECS) developed by Everett (2013) aims to estimate political conservatism. It was developed with the United  States in mind but has also previously been used for research in the United Kingdom (e.g. Banton, West, & Kinney, 2020).
 
 
-##	Personality Disorders:
+**How to use the SECS**
 
-### Psychopathy (LSRP)
-### Histrionic Personality Features (BHPS); attention seeking, etc
+The SECS requires participants how positive or negative they feel about a topic, e.g. the military, on a sliding scale from 0 to 100. On this scale, 50 would be considered neutral, 0 negative, and 100 positive. The SECS contains 12 items which are scored in this way.
 
+**Formats**
+
+The SECS is available in the following formats:
+
+[Word](link to file) | [Qualtrics](link to file)
+
+
+**Source & References**
+
+Banton, O., West, K., & Kinney, E. (2020). [The surprising politics of anti‐immigrant prejudice: How political conservatism moderates the effect of immigrant race and religion on infrahumanization judgements.](https://onlinelibrary.wiley.com/doi/pdf/10.1111/bjso.12337) *British Journal of Social Psychology, 59*(1), 157-170.
+
+Everett, J. A. (2013). [The 12 item social and economic conservatism scale (SECS).](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0082131&type=printable) *PloS ONE, 8*(12), e82131.
+
+##	Personality Disorders
+
+### Levenson Self-Report Psychopathy Scale (LSRP)
+
+The Levenson Self-Report Psychopathy Scale (LSRP) was developed by Levenson, Kiehl, and Fitzpatrick (1995). It measures two types of Psychopathy:
+
+1. *Primary Psychopathy*: Callous and unemotional attitudes and/or behaviour, usually low level of anxiety
+2. *Secondary Psychopathy*: Being implusive and engaging in self-destructive behaviour, often accompanied by high levels of anxiety
+
+
+**How to use the LSRP**
+
+The LSRP contains a total of 26 items, including 16 related to Primary Psychopathy and 10 related to Secondary Psychopathy. Each item is rated on a 4-point response scale:
+
+- 1 = disagree strongly
+- 2 = disagree somewhat
+- 3 = agree somewhat
+- 4 = agree strongly
+
+The following items included in the Primary Psychopathy section are scored in reverse: 10, 12, 14, 15, 16.
+
+In the Secondary Psychopathy section, the following items are scored in reverse: 3, 7
+
+**Formats**
+
+The LSRP is available in the following formats:
+
+[Word](link to file) | [Qualtrics](link to file)
+
+**Source:**
+
+Levenson, M. R., Kiehl, K. A., & Fitzpatrick, C. M. (1995). [Assessing psychopathic attributes in a noninstitutionalized population.](https://www.researchgate.net/profile/Michael_Levenson2/publication/15338539_Assessing_Psychopathic_Attributes_in_a_Noninstitutionalized_Population/links/54b6d8360cf2bd04be334b31.pdf) *Journal of Personality and Social Psychology, 68*(1), 151.
+
+### Brief Histrionic Personality Scale (BHPS)
+
+Histrionic Personality disorder is associated with attention-seeking and egocentric behaviour. The Brief Histrionic Personality Scale (BHPS) was developed by Ferguson and Negy (2014) and aims to give an indication of whether a person may be affected by it.
+
+**How to use the BHPS**
+
+The BHPS contains 11 items, which are scored on a 4-point scale ranging from 1 (never) to 4 (always). There are **no** reverse score items included-
+
+**Formats**
+
+The BHPS is available in the following formats: 
+
+[Word](link to file) | [Qualtrics](link to file)
+
+**Source:**
+
+Ferguson, C. J., & Negy, C. (2014). [Development of a brief screening questionnaire for histrionic personality symptoms](https://www.christopherjferguson.com/Histrionic.pdf). *Personality and Individual Differences, 66,* 124-127.

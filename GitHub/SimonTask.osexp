@@ -1,0 +1,218 @@
+---
+API: 2.1
+OpenSesame: 3.3.2
+Platform: nt
+---
+set width 1024
+set uniform_coordinates yes
+set title SimonTask
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set sampler_backend legacy
+set round_decimals 2
+set mouse_backend legacy
+set keyboard_backend legacy
+set height 768
+set fullscreen no
+set form_clicks no
+set foreground black
+set font_underline no
+set font_size 18
+set font_italic no
+set font_family mono
+set font_bold no
+set disable_garbage_collection yes
+set description "The main experiment item"
+set coordinates uniform
+set compensation 0
+set color_backend legacy
+set clock_backend legacy
+set canvas_backend legacy
+set background white
+
+define sketchpad Debrief
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="The End" x=0 y=-256 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="" x=-640 y=-160 z_index=0
+	draw textline center=1 color="#ff0000" font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Insert Debrief and Contact <br />information here" x=0 y=0 z_index=0
+
+define logger Logger
+	set description "Logs experimental data"
+	set auto_log yes
+
+define sketchpad Pract_Empty
+	set duration 250
+	set description "Displays stimuli"
+
+define sketchpad Pract_Fixation
+	set duration 800
+	set description "Displays stimuli"
+	draw fixdot color=black show_if=always style=default x=0 y=0 z_index=0
+
+define loop Pract_Simon
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 4
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 stimuli redleft
+	setcycle 0 correct_response z
+	setcycle 0 congruency congruent
+	setcycle 1 stimuli redright
+	setcycle 1 correct_response z
+	setcycle 1 congruency incongruent
+	setcycle 2 stimuli greenleft
+	setcycle 2 correct_response "/"
+	setcycle 2 congruency incongruent
+	setcycle 3 stimuli greenright
+	setcycle 3 correct_response "/"
+	setcycle 3 congruency congruent
+	run Pract_Simon_Sequence
+
+define sketchpad Pract_Simon_Fix2
+	set duration 500
+	set description "Displays stimuli"
+
+define sketchpad Pract_Simon_Instr
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=sans font_italic=no font_size=60 html=yes show_if=always text="Simon Task" x=0.0 y=-224.0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=sans font_italic=no font_size=28 html=yes show_if=always text="You will be presented with either a red or green square.<br /><br />If the square is red, press Z.<br />If the square is green, press /." x=-32.0 y=-96.0 z_index=0
+	draw rect color="#e60000" fill=1 h=192 penwidth=1 show_if=always w=192 x=-416.0 y=0.0 z_index=0
+	draw rect color="#009a00" fill=1 h=192 penwidth=1 show_if=always w=-192 x=384.0 y=0.0 z_index=0
+	draw textline center=1 color="#000000" font_bold=yes font_family=sans font_italic=no font_size=35 html=yes show_if=always text="= press Z" x=-128.0 y=96.0 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=sans font_italic=no font_size=35 html=yes show_if=always text="press / =" x=96.0 y=96.0 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=sans font_italic=no font_size=35 html=yes show_if=always text="Press any key to start the practice trials." x=0 y=288 z_index=0
+
+define sequence Pract_Simon_Sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run Pract_Fixation always
+	run Pract_Empty always
+	run Pract_Target always
+	run Pract_Simon_keyboard_response always
+	run Pract_Simon_Fix2 always
+	run Logger always
+	run feedback_correct "[correct]=1"
+	run feedback_incorrect "[correct]=0"
+
+define keyboard_response Pract_Simon_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "z; /"
+
+define sketchpad Pract_Target
+	set duration 0
+	set description "Displays stimuli"
+	draw rect color="#ff0000" fill=1 h=224 penwidth=1 show_if="[stimuli]='redleft'" w=224 x=-352 y=-96 z_index=0
+	draw rect color="#ff0000" fill=1 h=224 penwidth=1 show_if="[stimuli]='redright'" w=224 x=128 y=-96 z_index=0
+	draw rect color="#00aa00" fill=1 h=224 penwidth=1 show_if="[stimuli]='greenright'" w=224 x=128 y=-96 z_index=0
+	draw rect color="#00aa00" fill=1 h=224 penwidth=1 show_if="[stimuli]='greenleft'" w=224 x=-352 y=-96 z_index=0
+
+define loop Simon_Block
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 4
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 stimuli redleft
+	setcycle 0 correct_response z
+	setcycle 0 congruency congruent
+	setcycle 1 stimuli redright
+	setcycle 1 correct_response z
+	setcycle 1 congruency incongruent
+	setcycle 2 stimuli greenleft
+	setcycle 2 correct_response "/"
+	setcycle 2 congruency incongruent
+	setcycle 3 stimuli greenright
+	setcycle 3 correct_response "/"
+	setcycle 3 congruency congruent
+	run Simon_Sequence
+
+define sketchpad Simon_Empty
+	set duration 250
+	set description "Displays stimuli"
+
+define sketchpad Simon_Fix
+	set duration 800
+	set description "Displays stimuli"
+	draw fixdot color=black show_if=always style=default x=0 y=0 z_index=0
+
+define sketchpad Simon_Fix2
+	set duration 500
+	set description "Displays stimuli"
+
+define sketchpad Simon_Instr
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=sans font_italic=no font_size=60 html=yes show_if=always text="Simon Task" x=0.0 y=-224.0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=sans font_italic=no font_size=29 html=yes show_if=always text="Any questions?<br /><br /><br />Remember you will not receive feedback from now on." x=0.0 y=-96.0 z_index=0
+	draw rect color="#e60000" fill=1 h=192 penwidth=1 show_if=always w=192 x=-384.0 y=0.0 z_index=0
+	draw rect color="#009a00" fill=1 h=192 penwidth=1 show_if=always w=-192 x=384.0 y=0.0 z_index=0
+	draw textline center=1 color="#000000" font_bold=yes font_family=sans font_italic=no font_size=35 html=yes show_if=always text="= press Z" x=-96.0 y=96.0 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=sans font_italic=no font_size=35 html=yes show_if=always text="press / =" x=96.0 y=96.0 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=sans font_italic=no font_size=35 html=yes show_if=always text="Press any key to start the task." x=0 y=288 z_index=0
+
+define sequence Simon_Sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run Simon_Fix always
+	run Simon_Empty always
+	run Simon_Target always
+	run Simon_keyboard_response always
+	run Simon_Fix2 always
+	run Logger always
+
+define sketchpad Simon_Target
+	set duration 0
+	set description "Displays stimuli"
+	draw rect color="#ff0000" fill=1 h=224 penwidth=1 show_if="[stimuli]='redleft'" w=224 x=-352 y=-96 z_index=0
+	draw rect color="#ff0000" fill=1 h=224 penwidth=1 show_if="[stimuli]='redright'" w=224 x=128 y=-96 z_index=0
+	draw rect color="#00aa00" fill=1 h=224 penwidth=1 show_if="[stimuli]='greenright'" w=224 x=128 y=-96 z_index=0
+	draw rect color="#00aa00" fill=1 h=224 penwidth=1 show_if="[stimuli]='greenleft'" w=224 x=-352 y=-96 z_index=0
+
+define keyboard_response Simon_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "z; /"
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run Pract_Simon_Instr always
+	run Pract_Simon always
+	run Simon_Instr always
+	run Simon_Block always
+	run Debrief always
+
+define feedback feedback_correct
+	set reset_variables yes
+	set duration 500
+	set description "Provides feedback to the participant"
+	draw textline center=1 color="#009a00" font_bold=yes font_family=sans font_italic=no font_size=100 html=yes show_if=always text="Correct!" x=0 y=0 z_index=0
+
+define feedback feedback_incorrect
+	set reset_variables yes
+	set duration 500
+	set description "Provides feedback to the participant"
+	draw textline center=1 color="#e60000" font_bold=no font_family=sans font_italic=no font_size=100 html=yes show_if=always text="Incorrect!" x=0 y=0 z_index=0
+

@@ -42,7 +42,7 @@ These restrictions produced a list of 30 words and 30 non-words. [Click here for
 
 **References for Lexical Decision Task**
 
-Laurence, P. G., Pinto, T. M., Rosa, A. T. F., & Macedo, E. C. (2018). Can a lexical decision task predict efficiency in the judgment of ambiguous sentences?. Psicologia: Reflexão e Crítica, 31(1), 13.
+Laurence, P. G., Pinto, T. M., Rosa, A. T. F., & Macedo, E. C. (2018). [Can a lexical decision task predict efficiency in the judgment of ambiguous sentences?](https://prc.springeropen.com/articles/10.1186/s41155-018-0093-0) *Psicologia: Reflexão e Crítica, 31*(1), 13.
 
 ## Assessig Degree of Bilingualism
 
@@ -54,4 +54,4 @@ The LSBQ is analysed through an Excel spreadsheet, which can be downloaded [here
 
 **References for LSBQ**
 
-Anderson, J. A., Mak, L., Chahi, A. K., & Bialystok, E. (2018). The language and social background questionnaire: Assessing degree of bilingualism in a diverse population. Behavior research methods, 50(1), 250-263.
+Anderson, J. A., Mak, L., Chahi, A. K., & Bialystok, E. (2018). [The language and social background questionnaire: Assessing degree of bilingualism in a diverse population.](https://link.springer.com/article/10.3758/s13428-017-0867-9) *Behavior Research Methods, 50*(1), 250-263.

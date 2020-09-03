@@ -6,19 +6,25 @@ Implicit Association Tasks (IATs) require participants to categorise words as fa
 
 **Formats**
 
-A task version looking at gender and maths/language studies association can be downloaded for Open Sesame.
+A task version looking at gender and maths/language studies association can be downloaded for Open Sesame. The task that can be downloaded combines the paradigms used by Smeding et al. (2016) and Nosek, Banaji, and Greenwald (2016).
 
 [Open Sesame Online and Offline](link here) 
 
 
 **Things you will need to know for your Methods section**
 
-The task that can be downloaded combines the paradigms used by Smeding et al. (2016) and Nosek, Banaji, and Greenwald (2016).
+The task uses the male/female and math/language stimuli used by Smeding et al. (2016).
+
+The block design is as follows:
+```{r Figure6-1, out.width = '75%', fig.align = 'center', echo = FALSE, fig.cap = 'Overview of IAT blocks.'}
+
+knitr::include_graphics('images/IAT_Design.PNG')
+```
 
 
 **References**
 
 
-Smeding, A., Quinton, J. C., Lauer, K., Barca, L., & Pezzulo, G. (2016). Tracking and simulating dynamics of implicit stereotypes: A situated social cognition perspective. Journal of personality and social psychology, 111(6), 817.
+Smeding, A., Quinton, J. C., Lauer, K., Barca, L., & Pezzulo, G. (2016). [Tracking and simulating dynamics of implicit stereotypes: A situated social cognition perspective.](https://www.researchgate.net/profile/Jean-Charles_Quinton/publication/308341625_Tracking_and_Simulating_Dynamics_of_Implicit_Stereotypes_A_Situated_Social_Cognition_Perspective/links/581b4c3508aea429b28fc0d0/Tracking-and-Simulating-Dynamics-of-Implicit-Stereotypes-A-Situated-Social-Cognition-Perspective.pdf) *Journal of Personality and Social Psychology, 111*(6), 817.
 
-Nosek, B. A., Banaji, M. R., & Greenwald, A. G. (2016, December 27). Math = Male, Me = Female, therefore Math ≠ Me. https://doi.org/10.1037/0022-3514.83.1.44
+Nosek, B.A., Banaji, M.R., & Greenwald, A.G. (2002).  [Math = Male, Me = Female, therefore Math ¹Me.](https://psyarxiv.com/y2g6s) *Journal of Personality and Social Psychology, 83*, 44-59

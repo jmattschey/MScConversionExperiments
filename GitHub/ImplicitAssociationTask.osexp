@@ -1,0 +1,973 @@
+---
+API: 2.1
+OpenSesame: 3.3.2
+Platform: nt
+---
+set width 1024
+set uniform_coordinates yes
+set title ImplicitAssociationTask
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set sampler_backend legacy
+set round_decimals 2
+set mouse_backend legacy
+set keyboard_backend legacy
+set height 768
+set fullscreen no
+set form_clicks no
+set foreground black
+set font_underline no
+set font_size 18
+set font_italic no
+set font_family mono
+set font_bold no
+set experiment_path "C:/Users/Jennifer/Dropbox/StrathclydeOnlineLibrary/FinishedTasks"
+set disable_garbage_collection yes
+set description "The main experiment item"
+set coordinates uniform
+set compensation 0
+set color_backend legacy
+set clock_backend legacy
+set canvas_backend legacy
+set background white
+
+define sketchpad Debrief
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="The End" x=0 y=-256 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="" x=-640 y=-160 z_index=0
+	draw textline center=1 color="#ff0000" font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Insert Debrief and Contact <br />information here" x=0 y=0 z_index=0
+
+define sketchpad ImplicitAssociationTask_Block1_Fix
+	set duration 500
+	set description "Displays stimuli"
+	draw textline center=1 color="#a5a5a5" font_bold=no font_family=mono font_italic=no font_size=200 html=yes show_if=always text="+" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="female = A<br />male = K" x=0 y=-256 z_index=0
+
+define sketchpad ImplicitAssociationTask_Block1_Instr
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Practice Block" x=0 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="" x=0 y=-160 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=26 html=yes show_if=always text="You will see a series of words that are generally associated with being 'female' or 'male'<br /><br /><br />Your task is to categorise these words as female or male.<br /><br /><br />For female, press A, for male press K. You will receive feedback on your performance. <br /><br /><br /><br />Press any key to beginn." x=0 y=0 z_index=0
+
+define sequence ImplicitAssociationTask_Block1_Sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run ImplicitAssociationTask_Block1_Fix always
+	run ImplicitAssociationTask_Block1_Target always
+	run ImplicitAssociationTask_Block1_keyboard_response always
+	run feedback_correct "[correct]=1"
+	run feedback_incorrect "[correct]=0"
+	run Logger always
+
+define sketchpad ImplicitAssociationTask_Block1_Target
+	set duration 0
+	set description "Displays stimuli"
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=192 x=-448 y=-352 z_index=0
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=-192 x=448 y=-352 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text=female x=-352 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text=male x=352 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="[stimuli]" x=0 y=0 z_index=0
+
+define keyboard_response ImplicitAssociationTask_Block1_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "a; k"
+
+define loop ImplicitAssociationTask_Block1_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 12
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 stimuli daughter
+	setcycle 0 correct_response a
+	setcycle 0 category female
+	setcycle 1 stimuli feminine
+	setcycle 1 correct_response a
+	setcycle 1 category female
+	setcycle 2 stimuli grandmother
+	setcycle 2 correct_response a
+	setcycle 2 category female
+	setcycle 3 stimuli mother
+	setcycle 3 correct_response a
+	setcycle 3 category female
+	setcycle 4 stimuli wife
+	setcycle 4 correct_response a
+	setcycle 4 category female
+	setcycle 5 stimuli woman
+	setcycle 5 correct_response a
+	setcycle 5 category female
+	setcycle 6 stimuli Father
+	setcycle 6 correct_response k
+	setcycle 6 category male
+	setcycle 7 stimuli grandfather
+	setcycle 7 correct_response k
+	setcycle 7 category male
+	setcycle 8 stimuli man
+	setcycle 8 correct_response k
+	setcycle 8 category male
+	setcycle 9 stimuli masculine
+	setcycle 9 correct_response k
+	setcycle 9 category male
+	setcycle 10 stimuli son
+	setcycle 10 correct_response k
+	setcycle 10 category male
+	setcycle 11 stimuli uncle
+	setcycle 11 correct_response k
+	setcycle 11 category male
+	run ImplicitAssociationTask_Block1_Sequence
+
+define sketchpad ImplicitAssociationTask_Block2_Fix
+	set duration 500
+	set description "Displays stimuli"
+	draw textline center=1 color="#a5a5a5" font_bold=no font_family=mono font_italic=no font_size=200 html=yes show_if=always text="+" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="math = A<br />language = K" x=0 y=-256 z_index=0
+
+define sketchpad ImplicitAssociationTask_Block2_Instr
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Practice Block" x=0 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="" x=0 y=-160 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=26 html=yes show_if=always text="Well done!<br /><br />For the next block of trials, the words you <br />see are related to either 'math' or 'language'.<br /><br /><br />Your task is to categorise these words as <br />related to 'math' or 'language'.<br /><br /><br />For math, press A, for language press K. You will receive feedback on your performance.<br /><br /><br /><br />Press any key to beginn." x=0 y=0 z_index=0
+
+define sequence ImplicitAssociationTask_Block2_Sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run ImplicitAssociationTask_Block2_Fix always
+	run ImplicitAssociationTask_Block2_Target always
+	run ImplicitAssociationTask_Block2_keyboard_response always
+	run feedback_correct_Pract2 "[correct]=1"
+	run feedback_incorrect_Pract2 "[correct]=0"
+	run Logger always
+
+define sketchpad ImplicitAssociationTask_Block2_Target
+	set duration 0
+	set description "Displays stimuli"
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=192 x=-448 y=-352 z_index=0
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=-192 x=448 y=-352 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text=math x=-352 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text=language x=352 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="[stimuli]" x=0 y=0 z_index=0
+
+define keyboard_response ImplicitAssociationTask_Block2_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "a; k"
+
+define loop ImplicitAssociationTask_Block2_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 12
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 stimuli algebra
+	setcycle 0 correct_response a
+	setcycle 0 category math
+	setcycle 1 stimuli formula
+	setcycle 1 correct_response a
+	setcycle 1 category math
+	setcycle 2 stimuli geometry
+	setcycle 2 correct_response a
+	setcycle 2 category math
+	setcycle 3 stimuli equation
+	setcycle 3 correct_response a
+	setcycle 3 category math
+	setcycle 4 stimuli multiply
+	setcycle 4 correct_response a
+	setcycle 4 category math
+	setcycle 5 stimuli numbers
+	setcycle 5 correct_response a
+	setcycle 5 category math
+	setcycle 6 stimuli French
+	setcycle 6 correct_response k
+	setcycle 6 category language
+	setcycle 7 stimuli grammar
+	setcycle 7 correct_response k
+	setcycle 7 category language
+	setcycle 8 stimuli words
+	setcycle 8 correct_response k
+	setcycle 8 category language
+	setcycle 9 stimuli sentence
+	setcycle 9 correct_response k
+	setcycle 9 category language
+	setcycle 10 stimuli adjective
+	setcycle 10 correct_response k
+	setcycle 10 category language
+	setcycle 11 stimuli verbs
+	setcycle 11 correct_response k
+	setcycle 11 category language
+	run ImplicitAssociationTask_Block2_Sequence
+
+define sketchpad ImplicitAssociationTask_Block3_Fix
+	set duration 500
+	set description "Displays stimuli"
+	draw textline center=1 color="#a5a5a5" font_bold=no font_family=mono font_italic=no font_size=200 html=yes show_if=always text="+" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="male = K<br />language = K" x=224 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="female = A<br />math = A" x=-240 y=-282 z_index=0
+
+define sketchpad ImplicitAssociationTask_Block3_Instr
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Experiment Block 1" x=9 y=-266 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="" x=0 y=-160 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=24 html=yes show_if=always text="You have finished the practice trials!<br /><br />The words you have sorted in the practice trials will<br />now be mixed. This means you have to sort them either <br />based on gender or the subject they relate to.<br /><br />If the word is associated with being female or male,<br />'male' and 'female' will be green. However, if the <br />word is linked to math or languages, 'math' and <br />'language' will be green.<br /><br />For 'female' or 'math', press A. For <br />'male' or  'language, press K.<br /><br />You will no longer receive feedback<br /><br /><br /><br />Press any key to beginn." x=0 y=64 z_index=0
+
+define sequence ImplicitAssociationTask_Block3_Sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run ImplicitAssociationTask_Block3_Fix always
+	run ImplicitAssociationTask_Block3_Target always
+	run ImplicitAssociationTask_Block3_keyboard_response always
+	run Logger always
+
+define sketchpad ImplicitAssociationTask_Block3_Target
+	set duration 0
+	set description "Displays stimuli"
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=192 x=-448 y=-352 z_index=0
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=-192 x=448 y=-352 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=female x=-352 y=-320 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=female x=-352 y=-320 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=male x=352 y=-320 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=male x=352 y=-320 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="[stimuli]" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=math x=-352 y=-256 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=math x=-352 y=-256 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=language x=352 y=-256 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=language x=352 y=-256 z_index=0
+
+define keyboard_response ImplicitAssociationTask_Block3_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "a; k"
+
+define loop ImplicitAssociationTask_Block3_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 24
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 stimuli daughter
+	setcycle 0 correct_response a
+	setcycle 0 category female
+	setcycle 0 condition gender
+	setcycle 1 stimuli feminine
+	setcycle 1 correct_response a
+	setcycle 1 category female
+	setcycle 1 condition gender
+	setcycle 2 stimuli grandmother
+	setcycle 2 correct_response a
+	setcycle 2 category female
+	setcycle 2 condition gender
+	setcycle 3 stimuli mother
+	setcycle 3 correct_response a
+	setcycle 3 category female
+	setcycle 3 condition gender
+	setcycle 4 stimuli wife
+	setcycle 4 correct_response a
+	setcycle 4 category female
+	setcycle 4 condition gender
+	setcycle 5 stimuli woman
+	setcycle 5 correct_response a
+	setcycle 5 category female
+	setcycle 5 condition gender
+	setcycle 6 stimuli Father
+	setcycle 6 correct_response k
+	setcycle 6 category male
+	setcycle 6 condition gender
+	setcycle 7 stimuli grandfather
+	setcycle 7 correct_response k
+	setcycle 7 category male
+	setcycle 7 condition gender
+	setcycle 8 stimuli man
+	setcycle 8 correct_response k
+	setcycle 8 category male
+	setcycle 8 condition gender
+	setcycle 9 stimuli masculine
+	setcycle 9 correct_response k
+	setcycle 9 category male
+	setcycle 9 condition gender
+	setcycle 10 stimuli son
+	setcycle 10 correct_response k
+	setcycle 10 category male
+	setcycle 10 condition gender
+	setcycle 11 stimuli uncle
+	setcycle 11 correct_response k
+	setcycle 11 category male
+	setcycle 11 condition gender
+	setcycle 12 stimuli algebra
+	setcycle 12 correct_response a
+	setcycle 12 category math
+	setcycle 12 condition subjects
+	setcycle 13 stimuli formula
+	setcycle 13 correct_response a
+	setcycle 13 category math
+	setcycle 13 condition subjects
+	setcycle 14 stimuli geometry
+	setcycle 14 correct_response a
+	setcycle 14 category math
+	setcycle 14 condition subjects
+	setcycle 15 stimuli equation
+	setcycle 15 correct_response a
+	setcycle 15 category math
+	setcycle 15 condition subjects
+	setcycle 16 stimuli multiply
+	setcycle 16 correct_response a
+	setcycle 16 category math
+	setcycle 16 condition subjects
+	setcycle 17 stimuli numbers
+	setcycle 17 correct_response a
+	setcycle 17 category math
+	setcycle 17 condition subjects
+	setcycle 18 stimuli French
+	setcycle 18 correct_response k
+	setcycle 18 category language
+	setcycle 18 condition subjects
+	setcycle 19 stimuli grammar
+	setcycle 19 correct_response k
+	setcycle 19 category language
+	setcycle 19 condition subjects
+	setcycle 20 stimuli words
+	setcycle 20 correct_response k
+	setcycle 20 category language
+	setcycle 20 condition subjects
+	setcycle 21 stimuli sentence
+	setcycle 21 correct_response k
+	setcycle 21 category language
+	setcycle 21 condition subjects
+	setcycle 22 stimuli adjective
+	setcycle 22 correct_response k
+	setcycle 22 category language
+	setcycle 22 condition subjects
+	setcycle 23 stimuli verbs
+	setcycle 23 correct_response k
+	setcycle 23 category language
+	setcycle 23 condition subjects
+	run ImplicitAssociationTask_Block3_Sequence
+
+define sketchpad ImplicitAssociationTask_Block4_Fix
+	set duration 500
+	set description "Displays stimuli"
+	draw textline center=1 color="#a5a5a5" font_bold=no font_family=mono font_italic=no font_size=200 html=yes show_if=always text="+" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="male = K<br />math = K" x=224 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="female = A<br />language = A" x=-240 y=-282 z_index=0
+
+define sketchpad ImplicitAssociationTask_Block4_Instr
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Experiment Block 2" x=9 y=-266 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="" x=0 y=-160 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=24 html=yes show_if=always text="You have finished the first of five experimental blocks.<br /><br />For the next block of trials, the task is the same <br />but 'language' is now on the left and 'math' on the <br />right side of the screen.<br /><br />For 'female' or 'language', press A. For <br />'male' or  'math, press K.<br /><br /><br /><br /><br />Press any key to beginn." x=0 y=64 z_index=0
+
+define sequence ImplicitAssociationTask_Block4_Sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run ImplicitAssociationTask_Block4_Fix always
+	run ImplicitAssociationTask_Block4_Target always
+	run ImplicitAssociationTask_Block4_keyboard_response always
+	run Logger always
+
+define sketchpad ImplicitAssociationTask_Block4_Target
+	set duration 0
+	set description "Displays stimuli"
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=192 x=-448 y=-352 z_index=0
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=-192 x=448 y=-352 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=female x=-352 y=-320 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=female x=-352 y=-320 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=male x=352 y=-320 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=male x=352 y=-320 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="[stimuli]" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=language x=-352 y=-256 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=language x=-352 y=-256 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=math x=352 y=-256 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=math x=352 y=-256 z_index=0
+
+define keyboard_response ImplicitAssociationTask_Block4_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "a; k"
+
+define loop ImplicitAssociationTask_Block4_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 24
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 stimuli daughter
+	setcycle 0 correct_response a
+	setcycle 0 category female
+	setcycle 0 condition gender
+	setcycle 1 stimuli feminine
+	setcycle 1 correct_response a
+	setcycle 1 category female
+	setcycle 1 condition gender
+	setcycle 2 stimuli grandmother
+	setcycle 2 correct_response a
+	setcycle 2 category female
+	setcycle 2 condition gender
+	setcycle 3 stimuli mother
+	setcycle 3 correct_response a
+	setcycle 3 category female
+	setcycle 3 condition gender
+	setcycle 4 stimuli wife
+	setcycle 4 correct_response a
+	setcycle 4 category female
+	setcycle 4 condition gender
+	setcycle 5 stimuli woman
+	setcycle 5 correct_response a
+	setcycle 5 category female
+	setcycle 5 condition gender
+	setcycle 6 stimuli Father
+	setcycle 6 correct_response k
+	setcycle 6 category male
+	setcycle 6 condition gender
+	setcycle 7 stimuli grandfather
+	setcycle 7 correct_response k
+	setcycle 7 category male
+	setcycle 7 condition gender
+	setcycle 8 stimuli man
+	setcycle 8 correct_response k
+	setcycle 8 category male
+	setcycle 8 condition gender
+	setcycle 9 stimuli masculine
+	setcycle 9 correct_response k
+	setcycle 9 category male
+	setcycle 9 condition gender
+	setcycle 10 stimuli son
+	setcycle 10 correct_response k
+	setcycle 10 category male
+	setcycle 10 condition gender
+	setcycle 11 stimuli uncle
+	setcycle 11 correct_response k
+	setcycle 11 category male
+	setcycle 11 condition gender
+	setcycle 12 stimuli algebra
+	setcycle 12 correct_response k
+	setcycle 12 category math
+	setcycle 12 condition subjects
+	setcycle 13 stimuli formula
+	setcycle 13 correct_response k
+	setcycle 13 category math
+	setcycle 13 condition subjects
+	setcycle 14 stimuli geometry
+	setcycle 14 correct_response k
+	setcycle 14 category math
+	setcycle 14 condition subjects
+	setcycle 15 stimuli equation
+	setcycle 15 correct_response k
+	setcycle 15 category math
+	setcycle 15 condition subjects
+	setcycle 16 stimuli multiply
+	setcycle 16 correct_response k
+	setcycle 16 category math
+	setcycle 16 condition subjects
+	setcycle 17 stimuli numbers
+	setcycle 17 correct_response k
+	setcycle 17 category math
+	setcycle 17 condition subjects
+	setcycle 18 stimuli French
+	setcycle 18 correct_response a
+	setcycle 18 category language
+	setcycle 18 condition subjects
+	setcycle 19 stimuli grammar
+	setcycle 19 correct_response a
+	setcycle 19 category language
+	setcycle 19 condition subjects
+	setcycle 20 stimuli words
+	setcycle 20 correct_response a
+	setcycle 20 category language
+	setcycle 20 condition subjects
+	setcycle 21 stimuli sentence
+	setcycle 21 correct_response a
+	setcycle 21 category language
+	setcycle 21 condition subjects
+	setcycle 22 stimuli adjective
+	setcycle 22 correct_response a
+	setcycle 22 category language
+	setcycle 22 condition subjects
+	setcycle 23 stimuli verbs
+	setcycle 23 correct_response a
+	setcycle 23 category language
+	setcycle 23 condition subjects
+	run ImplicitAssociationTask_Block4_Sequence
+
+define sketchpad ImplicitAssociationTask_Block5_Fix
+	set duration 500
+	set description "Displays stimuli"
+	draw textline center=1 color="#a5a5a5" font_bold=no font_family=mono font_italic=no font_size=200 html=yes show_if=always text="+" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="male = A<br />female = K" x=0 y=-256 z_index=0
+
+define sketchpad ImplicitAssociationTask_Block5_Instr
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Experiment Block 3" x=9 y=-266 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="" x=0 y=-160 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=24 html=yes show_if=always text="You have finished the second of five experimental blocks.<br /><br /><br />For the next block of trials, your task is to <br />categorise the words you see as stereotypical <br />female or male only. <br /><br />In contrast to the previous trials, 'male' will now be shown <br />on the left and 'female' on the right side of the screen.<br /><br />Please press A to categorise a word as male <br />and K to categorise it as female.<br /><br /><br />Press any key to beginn." x=0 y=64 z_index=0
+
+define sequence ImplicitAssociationTask_Block5_Sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run ImplicitAssociationTask_Block5_Fix always
+	run ImplicitAssociationTask_Block5_Target always
+	run ImplicitAssociationTask_Block5_keyboard_response always
+	run Logger always
+
+define sketchpad ImplicitAssociationTask_Block5_Target
+	set duration 0
+	set description "Displays stimuli"
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=192 x=-448 y=-352 z_index=0
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=-192 x=448 y=-352 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text=male x=-352 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text=female x=352 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="[stimuli]" x=0 y=0 z_index=0
+
+define keyboard_response ImplicitAssociationTask_Block5_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "a; k"
+
+define loop ImplicitAssociationTask_Block5_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 12
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 stimuli daughter
+	setcycle 0 correct_response k
+	setcycle 0 category female
+	setcycle 1 stimuli feminine
+	setcycle 1 correct_response k
+	setcycle 1 category female
+	setcycle 2 stimuli grandmother
+	setcycle 2 correct_response k
+	setcycle 2 category female
+	setcycle 3 stimuli mother
+	setcycle 3 correct_response k
+	setcycle 3 category female
+	setcycle 4 stimuli wife
+	setcycle 4 correct_response k
+	setcycle 4 category female
+	setcycle 5 stimuli woman
+	setcycle 5 correct_response k
+	setcycle 5 category female
+	setcycle 6 stimuli Father
+	setcycle 6 correct_response a
+	setcycle 6 category male
+	setcycle 7 stimuli grandfather
+	setcycle 7 correct_response a
+	setcycle 7 category male
+	setcycle 8 stimuli man
+	setcycle 8 correct_response a
+	setcycle 8 category male
+	setcycle 9 stimuli masculine
+	setcycle 9 correct_response a
+	setcycle 9 category male
+	setcycle 10 stimuli son
+	setcycle 10 correct_response a
+	setcycle 10 category male
+	setcycle 11 stimuli uncle
+	setcycle 11 correct_response a
+	setcycle 11 category male
+	run ImplicitAssociationTask_Block5_Sequence
+
+define sketchpad ImplicitAssociationTask_Block6_Fix
+	set duration 500
+	set description "Displays stimuli"
+	draw textline center=1 color="#a5a5a5" font_bold=no font_family=mono font_italic=no font_size=200 html=yes show_if=always text="+" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="female = K<br />language = K" x=224 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="male = A<br />math = A" x=-240 y=-282 z_index=0
+
+define sketchpad ImplicitAssociationTask_Block6_Instr
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Experiment Block 4" x=9 y=-266 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="" x=0 y=-160 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=26 html=yes show_if=always text="You have finished the third experimental block <br />of trials - only two left to go!<br /><br />The next block of trials will ask you to categorise <br />words according to both gender and subjects again.<br /><br />For 'male' and 'math', please press A. <br />For 'female' and 'language', press K.<br /><br /><br /><br />Press any key to beginn." x=0 y=32 z_index=0
+
+define sequence ImplicitAssociationTask_Block6_Sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run ImplicitAssociationTask_Block6_Fix always
+	run ImplicitAssociationTask_Block6_Target always
+	run ImplicitAssociationTask_Block6_keyboard_response always
+	run Logger always
+
+define sketchpad ImplicitAssociationTask_Block6_Target
+	set duration 0
+	set description "Displays stimuli"
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=192 x=-448 y=-352 z_index=0
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=-192 x=448 y=-352 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=male x=-352 y=-320 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=male x=-352 y=-320 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=female x=352 y=-320 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=female x=352 y=-320 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="[stimuli]" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=math x=-352 y=-256 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=math x=-352 y=-256 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=language x=352 y=-256 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=language x=352 y=-256 z_index=0
+
+define keyboard_response ImplicitAssociationTask_Block6_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "a; k"
+
+define loop ImplicitAssociationTask_Block6_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 24
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 stimuli daughter
+	setcycle 0 correct_response k
+	setcycle 0 category female
+	setcycle 0 condition gender
+	setcycle 1 stimuli feminine
+	setcycle 1 correct_response k
+	setcycle 1 category female
+	setcycle 1 condition gender
+	setcycle 2 stimuli grandmother
+	setcycle 2 correct_response k
+	setcycle 2 category female
+	setcycle 2 condition gender
+	setcycle 3 stimuli mother
+	setcycle 3 correct_response k
+	setcycle 3 category female
+	setcycle 3 condition gender
+	setcycle 4 stimuli wife
+	setcycle 4 correct_response k
+	setcycle 4 category female
+	setcycle 4 condition gender
+	setcycle 5 stimuli woman
+	setcycle 5 correct_response k
+	setcycle 5 category female
+	setcycle 5 condition gender
+	setcycle 6 stimuli Father
+	setcycle 6 correct_response a
+	setcycle 6 category male
+	setcycle 6 condition gender
+	setcycle 7 stimuli grandfather
+	setcycle 7 correct_response a
+	setcycle 7 category male
+	setcycle 7 condition gender
+	setcycle 8 stimuli man
+	setcycle 8 correct_response a
+	setcycle 8 category male
+	setcycle 8 condition gender
+	setcycle 9 stimuli masculine
+	setcycle 9 correct_response a
+	setcycle 9 category male
+	setcycle 9 condition gender
+	setcycle 10 stimuli son
+	setcycle 10 correct_response a
+	setcycle 10 category male
+	setcycle 10 condition gender
+	setcycle 11 stimuli uncle
+	setcycle 11 correct_response a
+	setcycle 11 category male
+	setcycle 11 condition gender
+	setcycle 12 stimuli algebra
+	setcycle 12 correct_response a
+	setcycle 12 category math
+	setcycle 12 condition subjects
+	setcycle 13 stimuli formula
+	setcycle 13 correct_response a
+	setcycle 13 category math
+	setcycle 13 condition subjects
+	setcycle 14 stimuli geometry
+	setcycle 14 correct_response a
+	setcycle 14 category math
+	setcycle 14 condition subjects
+	setcycle 15 stimuli equation
+	setcycle 15 correct_response a
+	setcycle 15 category math
+	setcycle 15 condition subjects
+	setcycle 16 stimuli multiply
+	setcycle 16 correct_response a
+	setcycle 16 category math
+	setcycle 16 condition subjects
+	setcycle 17 stimuli numbers
+	setcycle 17 correct_response a
+	setcycle 17 category math
+	setcycle 17 condition subjects
+	setcycle 18 stimuli French
+	setcycle 18 correct_response k
+	setcycle 18 category language
+	setcycle 18 condition subjects
+	setcycle 19 stimuli grammar
+	setcycle 19 correct_response k
+	setcycle 19 category language
+	setcycle 19 condition subjects
+	setcycle 20 stimuli words
+	setcycle 20 correct_response k
+	setcycle 20 category language
+	setcycle 20 condition subjects
+	setcycle 21 stimuli sentence
+	setcycle 21 correct_response k
+	setcycle 21 category language
+	setcycle 21 condition subjects
+	setcycle 22 stimuli adjective
+	setcycle 22 correct_response k
+	setcycle 22 category language
+	setcycle 22 condition subjects
+	setcycle 23 stimuli verbs
+	setcycle 23 correct_response k
+	setcycle 23 category language
+	setcycle 23 condition subjects
+	run ImplicitAssociationTask_Block6_Sequence
+
+define sketchpad ImplicitAssociationTask_Block7_Fix
+	set duration 500
+	set description "Displays stimuli"
+	draw textline center=1 color="#a5a5a5" font_bold=no font_family=mono font_italic=no font_size=200 html=yes show_if=always text="+" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="female = K<br />math = K" x=224 y=-288 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="male = A<br />language = A" x=-240 y=-282 z_index=0
+
+define sketchpad ImplicitAssociationTask_Block7_Instr
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="Experiment Block 5" x=9 y=-266 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=36 html=yes show_if=always text="" x=0 y=-160 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=26 html=yes show_if=always text="Only one block of trials left to go!<br /><br />You will again be asked to categorise words as 'male' <br />or 'female', or as being associated with 'language' or math'.<br /><br />For 'male' and 'language', please press A. <br />For 'female' and 'math', press K.<br /><br /><br /><br />Press any key to beginn." x=0 y=32 z_index=0
+
+define sequence ImplicitAssociationTask_Block7_Sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run ImplicitAssociationTask_Block7_Fix always
+	run ImplicitAssociationTask_Block7_Target always
+	run ImplicitAssociationTask_Block7_keyboard_response always
+	run Logger always
+
+define sketchpad ImplicitAssociationTask_Block7_Target
+	set duration 0
+	set description "Displays stimuli"
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=192 x=-448 y=-352 z_index=0
+	draw rect color=black fill=0 h=128 penwidth=1 show_if=always w=-192 x=448 y=-352 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=male x=-352 y=-320 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=male x=-352 y=-320 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=female x=352 y=-320 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=female x=352 y=-320 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="[stimuli]" x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=language x=-352 y=-256 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=language x=-352 y=-256 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='gender'" text=math x=352 y=-256 z_index=0
+	draw textline center=1 color="#00aa00" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if="[condition]='subjects'" text=math x=352 y=-256 z_index=0
+
+define keyboard_response ImplicitAssociationTask_Block7_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+	set allowed_responses "a; k"
+
+define loop ImplicitAssociationTask_Block7_loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 24
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 stimuli daughter
+	setcycle 0 correct_response k
+	setcycle 0 category female
+	setcycle 0 condition gender
+	setcycle 1 stimuli feminine
+	setcycle 1 correct_response k
+	setcycle 1 category female
+	setcycle 1 condition gender
+	setcycle 2 stimuli grandmother
+	setcycle 2 correct_response k
+	setcycle 2 category female
+	setcycle 2 condition gender
+	setcycle 3 stimuli mother
+	setcycle 3 correct_response k
+	setcycle 3 category female
+	setcycle 3 condition gender
+	setcycle 4 stimuli wife
+	setcycle 4 correct_response k
+	setcycle 4 category female
+	setcycle 4 condition gender
+	setcycle 5 stimuli woman
+	setcycle 5 correct_response k
+	setcycle 5 category female
+	setcycle 5 condition gender
+	setcycle 6 stimuli Father
+	setcycle 6 correct_response a
+	setcycle 6 category male
+	setcycle 6 condition gender
+	setcycle 7 stimuli grandfather
+	setcycle 7 correct_response a
+	setcycle 7 category male
+	setcycle 7 condition gender
+	setcycle 8 stimuli man
+	setcycle 8 correct_response a
+	setcycle 8 category male
+	setcycle 8 condition gender
+	setcycle 9 stimuli masculine
+	setcycle 9 correct_response a
+	setcycle 9 category male
+	setcycle 9 condition gender
+	setcycle 10 stimuli son
+	setcycle 10 correct_response a
+	setcycle 10 category male
+	setcycle 10 condition gender
+	setcycle 11 stimuli uncle
+	setcycle 11 correct_response a
+	setcycle 11 category male
+	setcycle 11 condition gender
+	setcycle 12 stimuli algebra
+	setcycle 12 correct_response k
+	setcycle 12 category math
+	setcycle 12 condition subjects
+	setcycle 13 stimuli formula
+	setcycle 13 correct_response k
+	setcycle 13 category math
+	setcycle 13 condition subjects
+	setcycle 14 stimuli geometry
+	setcycle 14 correct_response k
+	setcycle 14 category math
+	setcycle 14 condition subjects
+	setcycle 15 stimuli equation
+	setcycle 15 correct_response k
+	setcycle 15 category math
+	setcycle 15 condition subjects
+	setcycle 16 stimuli multiply
+	setcycle 16 correct_response k
+	setcycle 16 category math
+	setcycle 16 condition subjects
+	setcycle 17 stimuli numbers
+	setcycle 17 correct_response k
+	setcycle 17 category math
+	setcycle 17 condition subjects
+	setcycle 18 stimuli French
+	setcycle 18 correct_response a
+	setcycle 18 category language
+	setcycle 18 condition subjects
+	setcycle 19 stimuli grammar
+	setcycle 19 correct_response a
+	setcycle 19 category language
+	setcycle 19 condition subjects
+	setcycle 20 stimuli words
+	setcycle 20 correct_response a
+	setcycle 20 category language
+	setcycle 20 condition subjects
+	setcycle 21 stimuli sentence
+	setcycle 21 correct_response a
+	setcycle 21 category language
+	setcycle 21 condition subjects
+	setcycle 22 stimuli adjective
+	setcycle 22 correct_response a
+	setcycle 22 category language
+	setcycle 22 condition subjects
+	setcycle 23 stimuli verbs
+	setcycle 23 correct_response a
+	setcycle 23 category language
+	setcycle 23 condition subjects
+	run ImplicitAssociationTask_Block7_Sequence
+
+define logger Logger
+	set description "Logs experimental data"
+	set auto_log yes
+
+define sketchpad Welcome
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="Welcome!" x=0 y=-288 z_index=0
+	draw textline center=1 color="#ff0000" font_bold=no font_family=mono font_italic=no font_size=40 html=yes show_if=always text="Insert Welcome message or information <br />on the next task here." x=0 y=-32 z_index=0
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run Welcome always
+	run ImplicitAssociationTask_Block1_Instr always
+	run ImplicitAssociationTask_Block1_loop always
+	run ImplicitAssociationTask_Block2_Instr always
+	run ImplicitAssociationTask_Block2_loop always
+	run ImplicitAssociationTask_Block3_Instr always
+	run ImplicitAssociationTask_Block3_loop always
+	run ImplicitAssociationTask_Block4_Instr always
+	run ImplicitAssociationTask_Block4_loop always
+	run ImplicitAssociationTask_Block5_Instr always
+	run ImplicitAssociationTask_Block5_loop always
+	run ImplicitAssociationTask_Block6_Instr always
+	run ImplicitAssociationTask_Block6_loop always
+	run ImplicitAssociationTask_Block7_Instr always
+	run ImplicitAssociationTask_Block7_loop always
+	run Debrief always
+
+define feedback feedback_correct
+	set reset_variables yes
+	set duration 500
+	set description "Provides feedback to the participant"
+	draw textline center=1 color="#00aa00" font_bold=yes font_family=mono font_italic=no font_size=60 html=yes show_if=always text="Correct!" x=0 y=0 z_index=0
+
+define feedback feedback_correct_Pract2
+	set reset_variables yes
+	set duration 500
+	set description "Provides feedback to the participant"
+	draw textline center=1 color="#00aa00" font_bold=yes font_family=mono font_italic=no font_size=60 html=yes show_if=always text="Correct!" x=0 y=0 z_index=0
+
+define feedback feedback_incorrect
+	set reset_variables yes
+	set duration 500
+	set description "Provides feedback to the participant"
+	draw textline center=1 color="#aa0000" font_bold=yes font_family=mono font_italic=no font_size=60 html=yes show_if=always text="Incorrect!" x=0 y=0 z_index=0
+
+define feedback feedback_incorrect_Pract2
+	set reset_variables yes
+	set duration 500
+	set description "Provides feedback to the participant"
+	draw textline center=1 color="#aa0000" font_bold=yes font_family=mono font_italic=no font_size=60 html=yes show_if=always text="Incorrect!" x=0 y=0 z_index=0
+
