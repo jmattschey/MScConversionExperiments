@@ -8,7 +8,7 @@ Lexical decision tasks require participants to identify whether a word they are 
 
 The Lexical Decision Task is available for Open Sesame: 
 
-[Open Sesame Online and Offline](link here) 
+[Open Sesame - Online & Offline](https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/LexicalDecisionTask.zip) 
 
 
 **Things you will need to know for your Methods section**

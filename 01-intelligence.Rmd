@@ -52,7 +52,7 @@ knitr::include_graphics('images/AdvancedRPM.png')
 
 If you remove stimuli this way, they will no longer be shown to participants. They will, however, remain in the "file pool", i.e. the folder in which Open Sesame stores the picture files. To view and/or remove these picture files, we need to access the File Pool. To do this, click on **View** -> **Show file pool** in Open Sesame's menu. Alternatively, press **Ctrl + P**. 
 
-As shown in Figure 4.2. below, you can view the stimuli in two different ways, either in Open Sesame or by opening the source folder. If you want to delete stimuli, highlight them in the file pool, right-click, and choose "Delete from pool." In the example below, all stimuli in Set I are removed. 
+As shown in Figure 3.2. below, you can view the stimuli in two different ways, either in Open Sesame or by opening the source folder. If you want to delete stimuli, highlight them in the file pool, right-click, and choose "Delete from pool." In the example below, all stimuli in Set I are removed. 
 
 
 ```{r Figure1-2, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'To view stimuli, or remove them from the Open Sesame file completely, you need to open the file pool.'}

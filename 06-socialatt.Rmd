@@ -8,7 +8,7 @@ Implicit Association Tasks (IATs) require participants to categorise words as fa
 
 A task version looking at gender and maths/language studies association can be downloaded for Open Sesame. The task that can be downloaded combines the paradigms used by Smeding et al. (2016) and Nosek, Banaji, and Greenwald (2016).
 
-[Open Sesame Online and Offline](link here) 
+[Open Sesame Online and Offline](https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/ImplicitAssociationTask.zip) 
 
 
 **Things you will need to know for your Methods section**
