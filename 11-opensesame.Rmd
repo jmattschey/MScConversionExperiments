@@ -32,6 +32,10 @@ If you use a Mac computer, you can download Open Sesame from here:
 In some cases, Open Sesame may be prevented from installing/launching. If you run into this issue, please follow [Apple's advice](https://support.apple.com/en-in/guide/mac-help/mh40616/mac) on how to work around this problem.
 
 
+## Open Sesame Tutorials
+
+The [official Open Sesame homepage](osdoc.cogsci.nl) has a wide range of tutorials that allow you to learn how to use it. The one I would recommend to start with is the [beginners gaze cueing paradigm](https://osdoc.cogsci.nl/3.3/tutorials/beginner/).
+
 ## Open Sesame: The Basics 
 
 When you open Open Sesame for the first time, it will look like this. 
@@ -49,6 +53,7 @@ knitr::include_graphics('images/opensesame/hover.PNG')
 ```
 
 To run an experiment, you have four options. Use "Run fullscreen" to test participants on a computer. Choose Quickrun or "Run in Window" to test if the experiment runs smoothly and all variables are recorded.'Run in browser' can be used to check if the experiments is suitable to run online. 
+
 ```{r Figure12-4, out.width = '85%', fig.align = 'center', echo = FALSE, fig.cap = 'Choose the option that suits your needs best.'}
 
 knitr::include_graphics('images/opensesame/runexp.PNG')
@@ -57,13 +62,20 @@ knitr::include_graphics('images/opensesame/runexp.PNG')
 If you have already downloaded one of the experiments, you can open it now and give it a try. If you have not decided on a experiment yet, Open Sesame comes with a small number of pre-installed experiments you can find by clicking on 'Tools' and choosing 'Example Experiments' 
 
 ## Starting to work with Open Sesame
+
 If you choose one of the Open Sesame experiments, you may want to add a question or combine tasks. We will have a look at how to add some simple questions and how to combine tasks. 
+
+Start by downloading the two (or more) files you want to combine. Open both by **double-clicking** on the files, so they open in two seperate windows. To copy elements from one experiment to another, right-click on the element you want to copy and choose 'copy'. To paste it, right-click in the location you want to copy it to and choose 'paste'
+
+## Loggers
+
+Open Sesame experiments should only have one Logger element in each experiment file. If you combine experiments, delete one type of logger and replace it with the other. You can do this by choosing 'copy (linked)' when you copy the logger. Then just paste it to the relevant locations.
 
 
 ## Open sesame on Android
 **Important information for the Android version**
 
-If you want to run an **Android version** of a task, it should only be used on tablets and not on mobile phones - unless you yourself programmed it to be used on phones. The Android app allows you to run Open Sesame on a tablet but you cannot make any changes to the experiment file. This needs to happen on a computer. Importantly, the app you will need to download is no longer developed and you may thus experience issues if you are trying to develop a new experiment in the latest Open Sesame version. To avoid these issues, please use Open Sesame version 3.1.8.
+If you want to run an **Android version** of a task, it should only be used on tablets and not on mobile phones - unless you yourself programmed it to be used on phones. The Android app allows you to run Open Sesame on a tablet but you cannot make any changes to the experiment file. This needs to happen on a computer. Importantly, the app you will need to download is no longer developed and you may thus experience issues if you are trying to develop a new experiment in the latest Open Sesame version. To avoid these issues, **please use Open Sesame version 3.1.8.**
 
 
 To download the app, search for "OpenSesame experiment runtime" in the app store or [click here](https://play.google.com/store/apps/details?id=nl.cogsci.opensesame).

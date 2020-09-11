@@ -1,6 +1,6 @@
 # Qualtrics
 
-Qualtrics is an online tool that can be used to run surveys. If you want to use Qualtrics, you need to register through the University of Strathclyde. You can do this by clicking [here](https://www.strath.ac.uk/is/software/qualtrics/). The information uder "How do I get it?" tells you what to do to register through the university. 
+Qualtrics is an online tool that can be used to run surveys. If you want to use Qualtrics, you need to register through the University of Strathclyde. You can do this by clicking [here](https://www.strath.ac.uk/is/software/qualtrics/). The information under "How do I get it?" tells you what to do to register through the university. 
 
 ## How to import questionnaires into Qualtrics
 For most questionnaires, you will have the option to download a Qualtrics file.
@@ -126,7 +126,25 @@ This will take you here:
 knitr::include_graphics('images/Qualtrics/15exportdata.PNG')
 ```
 
+Just choose the format in which you would like to download your data.
 
-## How to download Qualtrics data
+## Scoring
 
-Even more Text
+Unfortunately, exporting and then importing a study tends to remove scoring information from the Qualtrics file.
+
+The Qualtrics guide on how to set up scoring can be found [here](https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/scoring/). Using scoring means you can tell Qualtrics which questions to score in reverse and which questions it should use to calculate a subscore.
+
+If you don't want to use scoring, you can calculate scores in SPSS later.
+
+## Importing Questions only
+
+To import one of the prepared questionnaires, open the survey you want to add them to and click on 'Import Questions from.'
+
+
+```{r Figure11-16, out.width = '85%', fig.align = 'center', echo = FALSE, fig.cap = 'Click on Import Questions from'}
+
+knitr::include_graphics('images/Qualtrics/import.png')
+```
+
+In the next window click on **'My Surveys'** and then choose the survey that contains the question you are interested in. If the survey is a file you have downloaded from here, you can just add the whole survey, as each file only contains one question.
+

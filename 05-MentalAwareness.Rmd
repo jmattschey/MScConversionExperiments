@@ -21,8 +21,7 @@ study.
 
 **Things you will need to know for your Methods section**
 
-Remember to cite Ganis and Kievit (2015) as the source of the stimuli. Check their article for details of how the stimuli.
-The set they created includes 48 objects, each compared to itself and a different object rotated by 0°, 50°, 100°, and 150°. This means that for each angle and object, there is a pair of objects that are the same and a pair that shows two different objects. Below shows Object 1 and its corresponding pairs of stimuli as an example.
+Remember to cite Ganis and Kievit (2015) as the source of the stimuli. Check their article for details of how the stimuli were created. The set they created includes 48 objects, each compared to itself and a different object rotated by 0°, 50°, 100°, and 150°. This means that for each angle and object, there is a pair of objects that are the same and a pair that shows two different objects. Below shows Object 1 and its corresponding pairs of stimuli as an example.
 
 ```{r Figure5-2, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'Object 1 in the stimuli set created by Ganis and Kievit (2015). Each Object features in 8 picture pairs. Four of these pairs show the same object twice but at different rotation angles. The other four pictures show the object next to a different object, also at different degrees of rotation.'}
 

@@ -27,14 +27,14 @@ knitr::include_graphics('images/DASS_Scoring.PNG')
 
 You can download the DASS-21 as a PDF from the official [DASS Homepage](http://www2.psy.unsw.edu.au/groups/dass/) or as a Qualtrics file below.
 
-[Qualtrics](link) 
+[Qualtrics](questionnaires/DASS-21.qsf) 
 
 **Source:**
 
 Lovibond, S.H. & Lovibond, P.F. (1995).  *Manual for the Depression Anxiety Stress Scales.* (2nd. Ed.)  Sydney: Psychology Foundation.
 
 
-## (Modified) Abbreviated Math Anxiety Scale
+### (Modified) Abbreviated Math Anxiety Scale
 
 The Modified Abbreviated Math Anxiety Scale (mAMAS) was developed by Carey, Hill, Devine, and Szűcs (2017) and is based on the Abbreviated Math Anxiety Scale (AMAS) which was developed by Hopko, Mahadevan, Bare, and Hunt (2003). The wording of both scales is slightly different and in parts reflects that the data used to assess the suitability of the AMAS was collected in the US and the data used to assess suitability of the mAMAS was collected in the UK. The mAMAS can also be used to test children (approx. 8-13 years) while the use of the AMAS was verified for older teenagers and young adults.
 
@@ -50,9 +50,9 @@ Both the AMAS and the mAMAS contain 9 questions and answers are scored on a 5-po
 
 The AMAS and mAMAS can be downloaded as Qualtrics and Word file:
 
-[Qualtrics - AMAS](link)|[Word - AMAS](link)
-[Qualtrics - mAMAS](link)|[Word - mAMAS](link)
+[Qualtrics - AMAS](questionnaires/AbbreviatedMathAnxietyScale.qsf)|[Word - AMAS](questionnaires/AbbreviatedMathAnxietyScale.docx)
 
+[Qualtrics - mAMAS](questionnaires/ModifiedAbbreviatedMathAnxietyScale.qsf)|[Word - mAMAS](questionnaires/ModifiedAbbreviatedMathAnxietyScale.docx)
 
 
 **Source:**
@@ -66,7 +66,7 @@ Hopko, D. R., Mahadevan, R., Bare, R. L., & Hunt, M. K. (2003). [The abbreviated
 
 ## Autism
 
-The Autism Spectrum Quotient 10 items (AQ-10) scale was developed as a quick way to decide whether further further autism diagnostics should be conducted. There three versions of the AQ-10, one for children, one for adolescents, and one for adults.
+The Autism Spectrum Quotient 10 items (AQ-10) scale was developed as a quick way to decide whether further autism diagnostics should be conducted. There three versions of the AQ-10, one for children, one for adolescents, and one for adults.
 
 **How to use the AQ-10**
 
@@ -91,8 +91,9 @@ A score of 6 or more suggests autistic tendencies. In a clinical context, the pe
 
 Qualtrics and paper-based versions of the AQ-10 can be downloaded for children, adolescents, and adults below. Versions in alternative languages can be found [here](https://www.autismresearchcentre.com/arc_tests).
 
-[Qualtrics-Adults](link)|[Qualtrics-Adolescents](link)|[Qualtrics-Children](link) 
-[Word-Adults](link)|[Word-Adolescents](link)|[Word-Children](link) 
+[Qualtrics-Adults](questionnaires/AutismSpectrumQuotient_Adults.qsf)|[Qualtrics-Adolescents](questionnaires/AutismSpectrumQuotient_Adolescent.qsf)|[Qualtrics-Children](questionnaires/AutismSpectrumQuotient_Children.qsf)
+
+[Word-Adults](questionnaires/AutismSpectrumQuotient_Adults.docx)|[Word-Adolescents](questionnaires/AutismSpectrumQuotient_Adolescent.docx)|[Word-Children](questionnaires/AutismSpectrumQuotient_Children.docx) 
 
 
 **Source:**
@@ -113,8 +114,8 @@ The PIUQ uses means related to each subscale. The mean score for each subscale c
 
 You can download the PIUQ as a Microsoft Word or as a Qualtrics file.
 
-[Qualtrics](./questionnaires/Problematic_Internet_Use_Questionnaire_PIUQ.qsf) | 
-[Word](./questionnaires/ProblematicInternetUseQuestionnaire.docx)
+[Qualtrics](questionnaires/ProblematicInternetUseQuestionnaire.qsf) | 
+[Word](questionnaires/ProblematicInternetUseQuestionnaire.docx)
 
 
 **Source:**
@@ -124,7 +125,7 @@ Demetrovics, Z., Szeredi, B., & Rózsa, S. (2008). [The three-factor model of In
 
 ## General Mental Health
 
-The Mental Health Continuum - Short Form (MHC-SF) measures general mental health in relation to emotional wellbeing, social wellbeing, and psychological wellbeing.Two versions of the MHC-SF exist, one for adults (18 years and older) and one for teenagers (12-18 years).
+The Mental Health Continuum - Short Form (MHC-SF) was developed by Keyes (2002) and measures general mental health in relation to emotional wellbeing, social wellbeing, and psychological wellbeing.Two versions of the MHC-SF exist, one for adults (18 years and older) and one for teenagers (12-18 years).
 
 **How to use the MHC-SF**
 
@@ -150,10 +151,10 @@ People are classified as 'flourishing' or 'languishing' based on their responses
 
 **Formats**
 
-You can download the PIUQ as a Microsoft Word or as a Qualtrics file.
+You can download the MHC-SF as a Microsoft Word or as a Qualtrics file.
 
-[Qualtrics](link) | 
-[Word](link)
+[Qualtrics](questionnaires/MentalHealthContinuum_Adults.qsf) | 
+[Word](questionnaires/MentalHealthContinuum_Adults.docx)
 
 **Source:**
 

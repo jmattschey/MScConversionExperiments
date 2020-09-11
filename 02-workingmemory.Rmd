@@ -14,7 +14,7 @@ Because we cannot use the form function of Open Sesame online, participants are 
 
 **Ways to adapt the Digit Span Task**
 
-You may want to use different numbers, letters, or even words. This can be done by opening **DigitSpan_Loop** and changing the numbers that are entered as the digits to be shown. Picture 5.1. explains the key sections of the loop table. To see a bigger version of the image, [click here](https://raw.githubusercontent.com/jmattschey/MScConversionExperiments/master/images/ChangeDigitSpan.png)
+You may want to use different numbers, letters, or even words. This can be done by opening **DigitSpan_Loop** and changing the numbers that are entered as the digits to be shown. Figure 3.1. explains the key sections of the loop table. To see a bigger version of the image, [click here](https://raw.githubusercontent.com/jmattschey/MScConversionExperiments/master/images/ChangeDigitSpan.png)
 
 ```{r Figure2-1, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'You can change the digits that are shown to participants by changig the numbers framed in purple.'}
 

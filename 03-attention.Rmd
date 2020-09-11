@@ -3,14 +3,14 @@
 ## Attentional Network Task (ANT)
 Attentional Network Tasks (ANTs) aim to assess performance in relation to the three attentional networks proposed by Posner and Petersen (1990): alerting, orienting, and executive control. The executive control network is sometimes also called "conflict network." ANTs combine the cued reaction time paradigm proposed by Posner (1980) and the Eriksen Flanker Task (Eriksen, & Eriksen, 1974). The former requires participants to identify on which side (i.e. right or left) a target appeared, while the latter asks participants to identify a target surrounded by distractors.
 
-The ANT included in this experiment library is based on the task version proposed by Fan, McCandliss, Sommer, Raz, and Posner (2002). The task includes five different cues. Some inform the participant that a target is about to appear and where. Others only let the the participant know that the target will appear shortly but not where. Finally, on some trials, the target will appear without a cue preceding it. Figure 5.2. shows the overview of cues participants see prior to starting the experiment.
+The ANT included in this experiment library is based on the task version proposed by Fan, McCandliss, Sommer, Raz, and Posner (2002). The task includes five different cues. Some inform the participant that a target is about to appear and where. Others only let the the participant know that the target will appear shortly but not where. Finally, on some trials, the target will appear without a cue preceding it. Figure 4.2. shows the overview of cues participants see prior to starting the experiment.
 
 ```{r Figure3-2, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Targets can be preceded by five different types of cues.'}
 
 knitr::include_graphics('images/ANT_Cues.PNG')
 ```
 
-The targets in this task version are arrows, which can appear either above or below the fixation cross. They are surrounded by distractor stimuli, which can either be congruent (i.e. arrows pointing in the same direction), incongruent (i.e. arrows pointing in the opposite direction), or neutral (in this case, a line or dash). Figure 5.3. shows the different types of target displays as they are explained to the participant.
+The targets in this task version are arrows, which can appear either above or below the fixation cross. They are surrounded by distractor stimuli, which can either be congruent (i.e. arrows pointing in the same direction), incongruent (i.e. arrows pointing in the opposite direction), or neutral (in this case, a line or dash). Figure 4.3. shows the different types of target displays as they are explained to the participant.
 
 ```{r Figure3-3, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Targets can be surrounded by congruent, incongruent, or neutral stimuli.'}
 
@@ -49,7 +49,7 @@ Posner, M. I., & Petersen, S. E. (1990). [The attention system of the human brai
 
 ## Simon Task
 
-The Simon Task is based on the observation that people respond faster and with higher accuracy if the stimulus they respond to and the required response share features, for example, location (Simon, & Wolf, 1963; Simon, & Rudell, 1967). One version of the task requires participants to identify the colour of squares (e.g. Gulbinaite, van Rijn, & Cohen, 2014). Figure 5.4. shows an example of such a task. Squares are either presented on the right or left side of the screen. The response keys, M and Z, are located on the left and right side of the keyboard (if we are using a QWERTY keyboard). This means the response location (left vs. right) and the presentation location (left vs. right) can either match or mismatch. 
+The Simon Task is based on the observation that people respond faster and with higher accuracy if the stimulus they respond to and the required response share features, for example, location (Simon, & Wolf, 1963; Simon, & Rudell, 1967). One version of the task requires participants to identify the colour of squares (e.g. Gulbinaite, van Rijn, & Cohen, 2014). Figure 4.4. shows an example of such a task. Squares are either presented on the right or left side of the screen. The response keys, M and Z, are located on the left and right side of the keyboard (if we are using a QWERTY keyboard). This means the response location (left vs. right) and the presentation location (left vs. right) can either match or mismatch. 
 
 
 ```{r Figure3-4, out.width = '80%', fig.align = 'center', echo = FALSE, fig.cap = 'Example sequence of a Simon Task with coloured squares.'}
@@ -118,7 +118,7 @@ knitr::include_graphics('images/changesimon/Simon2.gif')
 }
 ```
 
-We want to draw four arrows: two positioned on the left, two positioned on the right. The two arrows on each side of the screen should point into opposite directions, i.e. one points left, one points right. The arrow task version usually does not require differently coloured arrows and arrows tend to be black. You can change the colour in the the script view or in the controls view (see Figure 5.9. below).
+We want to draw four arrows: two positioned on the left, two positioned on the right. The two arrows on each side of the screen should point into opposite directions, i.e. one points left, one points right. The arrow task version usually does not require differently coloured arrows and arrows tend to be black. You can change the colour in the the script view or in the controls view (see Figure 4.9. below).
 
 ```{r Figure3-9, out.width = '60%', fig.align = 'center', echo = FALSE, fig.cap = 'You can change the colour of the displayed arrows in the script or control view.'}
 

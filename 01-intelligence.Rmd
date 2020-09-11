@@ -4,7 +4,7 @@ The intelligence tests listed in the following are copyright protected and there
 
 The tests are suitable to test adults of below average intelligence, average intelligence, and above average intelligence. For children aged 4 to 11 years, the Crichton Vocabulary Scale and Coloured Progressive Matrices are included.
 
-Remember to check if aspects of your experiment design may affect your measures. For example, bilinguals tend to perform worse on verbal intelligence tests than monolinguals but both groups perform equally well on non-verbal intelligence tests. Thus, if you think this may affect the outcome of your findings, you would want to record whether your participants are bilingual.
+Remember to check if aspects of your experiment design may affect your measures. For example, bilinguals tend to perform worse on verbal intelligence tests than monolinguals but both groups perform equally well on non-verbal intelligence tests. Thus, if you think this may affect the outcome of your findings, you should record whether your participants are bilingual.
 
 
 ## Raven's Matrices for Adults
@@ -23,16 +23,14 @@ To get a full picture of a person's intelligence, the Mill Hill Vocabulary Test 
 
 At the moment, the following versions are available for Psychology students at the University of Strathclyde:
 
-[Open Sesame Raven's Progressive Matrices - 9-items version](link to file) | [Open Sesame Raven's Advanced Progressive Matrices](link to file)
-
-**Other Task Versions**
-
-Raven's Matrices can also be implemented in Qualtrics. This will be done in due course. In the meantime, if you require access to the stimuli or the paper-based version of the task, please contact [Dr Jennifer Mattschey](mailto: Jennifer.Mattschey@strath.ac.uk), using your University of Strathclyde student or staff e-mail.
+Please talk to your supervisor to get the Open Sesame files. 
 
 
 **Things you will need to know for your Methods section**
 
 If you look at the **Ravens loop** in Raven's Advanced Progressive Matrices you will notice that the first matrix of Set I is not included in the loop. Instead, the first matrix of Set I is shown as an example for participants.
+
+The 9-Item file contains both Form A and Form B. Participants are expected to complete only one of these, please delete the one you do not want to use. The example shown in the 9-item version is A5 in the in the Standard Matrices.
 
 ### Shortening Raven's Advanced Progressive Matrices
 
@@ -52,7 +50,7 @@ knitr::include_graphics('images/AdvancedRPM.png')
 
 If you remove stimuli this way, they will no longer be shown to participants. They will, however, remain in the "file pool", i.e. the folder in which Open Sesame stores the picture files. To view and/or remove these picture files, we need to access the File Pool. To do this, click on **View** -> **Show file pool** in Open Sesame's menu. Alternatively, press **Ctrl + P**. 
 
-As shown in Figure 3.2. below, you can view the stimuli in two different ways, either in Open Sesame or by opening the source folder. If you want to delete stimuli, highlight them in the file pool, right-click, and choose "Delete from pool." In the example below, all stimuli in Set I are removed. 
+As shown in Figure 2.2. below, you can view the stimuli in two different ways, either in Open Sesame or by opening the source folder. If you want to delete stimuli, highlight them in the file pool, right-click, and choose "Delete from pool." In the example below, all stimuli in Set I are removed. 
 
 
 ```{r Figure1-2, out.width = '99%', fig.align = 'center', echo = FALSE, fig.cap = 'To view stimuli, or remove them from the Open Sesame file completely, you need to open the file pool.'}
@@ -69,7 +67,8 @@ The Mill Hill Vocabulary Scale is a measure of linguistic ability (Raven, 2003).
 
 The Mill Hill Vocabulary Scale Open Sesame files are suitable to be used online or offline.
 
-[Open Sesame - Set A](link here) | [Open Sesame - Set B](link here)
+Please talk to your supervisor to get the Open Sesame files. 
+
 
 
 **Things you will need to know for your Methods section**
@@ -82,11 +81,17 @@ Watts, Baddeley, and Williams (1982) found that a shortened version of the multi
 
 
 
-**Mill Hill References**
+**Ravens's Matrices & Mill Hill References**
+
+Matarazzo, J. D. (1990). [Psychological assessment versus psychological testing.](https://www.gwern.net/docs/psychology/1990-matarazzo.pdf) *American Psychologist, 45*, 999–1017.
+
+
+Raven, J. (2003). Raven progressive matrices. In Handbook of nonverbal assessment (pp. 223-237). Springer, Boston, MA.
 
 Raven, J. C. (1958). *Guide to using the Mill Hill Vocabulary Scale with the Progressive Matrices Scales.* H. K. Lewis & Co.
 
-Matarazzo, J. D. (1990). [Psychological assessment versus psychological testing.](https://www.gwern.net/docs/psychology/1990-matarazzo.pdf) *American Psychologist, 45*, 999–1017.
+Watts, K., Baddeley, A., & Williams, M. (1982). [Automated tailored testing using Raven's Matrices and the Mill Hill Vocabulary tests: a comparison with manual administration.](https://www.sciencedirect.com/science/article/abs/pii/S0020737382800357) *International Journal of Man-Machine Studies*, 17(3), 331-344.
+
 
 ## Coloured Progressive Matrices
 
@@ -96,13 +101,13 @@ Raven's Coloured Progressive Matrices are similar to the Standard and Advanced M
 - **Set AB:** 12 Stimuli
 - **Set B:** 12 Stimuli
 
-The Coloured Matrices were originally designed for childred, aged 4 to 11 years. However, if they are also suitable to be used with adults for whom the Standard Matrices may be too difficult to complete.
+The Coloured Matrices were originally designed for children, aged 4 to 11 years. However, if they are also suitable to be used with adults for whom the Standard Matrices may be too difficult to complete.
 
 **Formats**
 
 The Coloured Matrices are currently available as two different Open Sesame files. One for use on Android devices and one for use on a computer, either offline or online.
 
-[Open Sesame - Online and Offline](link here) | [Open Sesame - Android](link here)
+Please talk to your supervisor to get the Open Sesame files. 
 
 Using Android versions of tasks changes a few things, for example, you will to use a different Open Sesame version to make changes to it. Please check the relevant section of the Open Sesame chapter for more details.
 
@@ -115,4 +120,6 @@ The Crichton Vocabulary Scale should be used together with the Coloured Progress
 The Crichton Vocabulary Scale Consists of open ended questions only, hence, there is no multiple-choice option available. This means, you can only use it online if you use Qualtrics. For Open Sesame, you have the option to use forms or use the Android version below. 
 The Android version is used by the experimenter and should not be seen by the participant. It allows you to decide whether the response was acceptable or not in real time by tapping the left or right side of a tablet screen. This may be suitable if you do not require a record of specific response. 
 
-[Qualtrics](link here) | [Open Sesame - Android](link here) | [Paper-Based](link here)
+[Qualtrics](link here) 
+
+For the Open Sesame file, please talk to your supervisor.
