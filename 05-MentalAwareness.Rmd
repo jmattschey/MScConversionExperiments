@@ -17,7 +17,7 @@ The mental rotation task, with the stimuli created by Ganis and Kievit (2015), i
 Both are suitable to be used online, however, the long task version can be expected to take around 30 minutes to complete, which is quite long for an online
 study.
 
-[Open Sesame - Short Version](https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/SpatialRotationShort.zip) | [Open Sesame - Long Version](https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/SpatialRotationLong.osexp)
+[Open Sesame - Short Version](GitHub/SpatialRotationShort.osexp) | [Open Sesame - Long Version](GitHub/SpatialRotationLong.osexp)
 
 **Things you will need to know for your Methods section**
 

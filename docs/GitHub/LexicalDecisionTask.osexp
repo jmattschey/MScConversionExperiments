@@ -1,0 +1,298 @@
+---
+API: 2.1
+OpenSesame: 3.3.2
+Platform: nt
+---
+set width 1024
+set uniform_coordinates yes
+set title LexicalDecisionTask
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set sampler_backend legacy
+set round_decimals 2
+set mouse_backend legacy
+set keyboard_backend legacy
+set height 768
+set fullscreen no
+set form_clicks no
+set foreground black
+set font_underline no
+set font_size 18
+set font_italic no
+set font_family mono
+set font_bold no
+set experiment_path "C:\\Users\\Jennifer\\Dropbox\\StrathclydeOnlineLibrary\\FinishedTasks"
+set disable_garbage_collection yes
+set description "The main experiment item"
+set coordinates uniform
+set compensation 0
+set color_backend legacy
+set clock_backend legacy
+set canvas_backend legacy
+set background white
+
+define sketchpad End
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=37 html=yes show_if=always text="The End" x=0 y=-288 z_index=0
+	draw textline center=1 color="#ff0000" font_bold=yes font_family=mono font_italic=no font_size=37 html=yes show_if=always text="Insert Debrief and <br />Contact Details here" x=0 y=-128 z_index=0
+
+define sketchpad LexiDec_Fix
+	set duration 2000
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=mono font_italic=no font_size=150 html=yes show_if=always text="+" x=0 y=0 z_index=0
+
+define sketchpad LexiDec_Instr2
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color="#000000" font_bold=yes font_family=sans font_italic=no font_size=30 html=yes show_if=always text="Example:" x=13 y=-264 z_index=0
+	draw textline center=1 color="#00007f" font_bold=yes font_family=sans font_italic=no font_size=30 html=yes show_if=always text=dog x=0 y=-160 z_index=0
+	draw textline center=1 color="#000000" font_bold=yes font_family=sans font_italic=no font_size=30 html=yes show_if=always text="Press A<br />= real word" x=-196 y=-45 z_index=0
+	draw textline center=1 color="#000000" font_bold=yes font_family=sans font_italic=no font_size=30 html=yes show_if=always text="Press K <br />= not a real word" x=220 y=-45 z_index=0
+	draw line color="#000000" penwidth=3 show_if=always x1=-256 x2=288 y1=32 y2=32 z_index=0
+	draw line color="#000000" penwidth=3 show_if=always x1=-288 x2=-256 y1=32 y2=32 z_index=0
+	draw textline center=1 color="#000000" font_bold=no font_family=sans font_italic=no font_size=30 html=yes show_if=always text="As dog is a real word, you would press A" x=0 y=96 z_index=0
+	draw textline center=1 color="#000000" font_bold=yes font_family=sans font_italic=no font_size=30 html=yes show_if=always text="Please press any key to start the experiment." x=0 y=192 z_index=0
+	draw line color="#000000" penwidth=3 show_if=always x1=-128 x2=128 y1=-224 y2=-224 z_index=0
+
+define loop LexiDec_Loop
+	set source_file ""
+	set source table
+	set repeat 1
+	set order random
+	set description "Repeatedly runs another item"
+	set cycles 60
+	set continuous no
+	set break_if_on_first yes
+	set break_if never
+	setcycle 0 word acid
+	setcycle 0 correct_response a
+	setcycle 0 WordNonword word
+	setcycle 1 word attorney
+	setcycle 1 correct_response a
+	setcycle 1 WordNonword word
+	setcycle 2 word bacteria
+	setcycle 2 correct_response a
+	setcycle 2 WordNonword word
+	setcycle 3 word bottom
+	setcycle 3 correct_response a
+	setcycle 3 WordNonword word
+	setcycle 4 word broken
+	setcycle 4 correct_response a
+	setcycle 4 WordNonword word
+	setcycle 5 word cocaine
+	setcycle 5 correct_response a
+	setcycle 5 WordNonword word
+	setcycle 6 word coffin
+	setcycle 6 correct_response a
+	setcycle 6 WordNonword word
+	setcycle 7 word firearm
+	setcycle 7 correct_response a
+	setcycle 7 WordNonword word
+	setcycle 8 word garbage
+	setcycle 8 correct_response a
+	setcycle 8 WordNonword word
+	setcycle 9 word goblin
+	setcycle 9 correct_response a
+	setcycle 9 WordNonword word
+	setcycle 10 word graveyard
+	setcycle 10 correct_response a
+	setcycle 10 WordNonword word
+	setcycle 11 word heroin
+	setcycle 11 correct_response a
+	setcycle 11 WordNonword word
+	setcycle 12 word homework
+	setcycle 12 correct_response a
+	setcycle 12 WordNonword word
+	setcycle 13 word infantry
+	setcycle 13 correct_response a
+	setcycle 13 WordNonword word
+	setcycle 14 word infection
+	setcycle 14 correct_response a
+	setcycle 14 WordNonword word
+	setcycle 15 word latex
+	setcycle 15 correct_response a
+	setcycle 15 WordNonword word
+	setcycle 16 word lawyer
+	setcycle 16 correct_response a
+	setcycle 16 WordNonword word
+	setcycle 17 word litter
+	setcycle 17 correct_response a
+	setcycle 17 WordNonword word
+	setcycle 18 word marijuana
+	setcycle 18 correct_response a
+	setcycle 18 WordNonword word
+	setcycle 19 word medication
+	setcycle 19 correct_response a
+	setcycle 19 WordNonword word
+	setcycle 20 word needle
+	setcycle 20 correct_response a
+	setcycle 20 WordNonword word
+	setcycle 21 word petroleum
+	setcycle 21 correct_response a
+	setcycle 21 WordNonword word
+	setcycle 22 word politician
+	setcycle 22 correct_response a
+	setcycle 22 WordNonword word
+	setcycle 23 word prisoner
+	setcycle 23 correct_response a
+	setcycle 23 WordNonword word
+	setcycle 24 word serpent
+	setcycle 24 correct_response a
+	setcycle 24 WordNonword word
+	setcycle 25 word servant
+	setcycle 25 correct_response a
+	setcycle 25 WordNonword word
+	setcycle 26 word tobacco
+	setcycle 26 correct_response a
+	setcycle 26 WordNonword word
+	setcycle 27 word toilet
+	setcycle 27 correct_response a
+	setcycle 27 WordNonword word
+	setcycle 28 word urine
+	setcycle 28 correct_response a
+	setcycle 28 WordNonword word
+	setcycle 29 word werewolf
+	setcycle 29 correct_response a
+	setcycle 29 WordNonword word
+	setcycle 30 word mallerina
+	setcycle 30 correct_response k
+	setcycle 30 WordNonword "non-word"
+	setcycle 31 word settering
+	setcycle 31 correct_response k
+	setcycle 31 WordNonword "non-word"
+	setcycle 32 word cothered
+	setcycle 32 correct_response k
+	setcycle 32 WordNonword "non-word"
+	setcycle 33 word commetting
+	setcycle 33 correct_response k
+	setcycle 33 WordNonword "non-word"
+	setcycle 34 word compesite
+	setcycle 34 correct_response k
+	setcycle 34 WordNonword "non-word"
+	setcycle 35 word concarted
+	setcycle 35 correct_response k
+	setcycle 35 WordNonword "non-word"
+	setcycle 36 word concission
+	setcycle 36 correct_response k
+	setcycle 36 WordNonword "non-word"
+	setcycle 37 word concerd
+	setcycle 37 correct_response k
+	setcycle 37 WordNonword "non-word"
+	setcycle 38 word hongestion
+	setcycle 38 correct_response k
+	setcycle 38 WordNonword "non-word"
+	setcycle 39 word consinsus
+	setcycle 39 correct_response k
+	setcycle 39 WordNonword "non-word"
+	setcycle 40 word fonsenting
+	setcycle 40 correct_response k
+	setcycle 40 WordNonword "non-word"
+	setcycle 41 word consisking
+	setcycle 41 correct_response k
+	setcycle 41 WordNonword "non-word"
+	setcycle 42 word bontested
+	setcycle 42 correct_response k
+	setcycle 42 WordNonword "non-word"
+	setcycle 43 word montinent
+	setcycle 43 correct_response k
+	setcycle 43 WordNonword "non-word"
+	setcycle 44 word convectiol
+	setcycle 44 correct_response k
+	setcycle 44 WordNonword "non-word"
+	setcycle 45 word donverting
+	setcycle 45 correct_response k
+	setcycle 45 WordNonword "non-word"
+	setcycle 46 word gostering
+	setcycle 46 correct_response k
+	setcycle 46 WordNonword "non-word"
+	setcycle 47 word senerated
+	setcycle 47 correct_response k
+	setcycle 47 WordNonword "non-word"
+	setcycle 48 word reating
+	setcycle 48 correct_response k
+	setcycle 48 WordNonword "non-word"
+	setcycle 49 word gaceration
+	setcycle 49 correct_response k
+	setcycle 49 WordNonword "non-word"
+	setcycle 50 word pettering
+	setcycle 50 correct_response k
+	setcycle 50 WordNonword "non-word"
+	setcycle 51 word marineting
+	setcycle 51 correct_response k
+	setcycle 51 WordNonword "non-word"
+	setcycle 52 word reditation
+	setcycle 52 correct_response k
+	setcycle 52 WordNonword "non-word"
+	setcycle 53 word loderating
+	setcycle 53 correct_response k
+	setcycle 53 WordNonword "non-word"
+	setcycle 54 word rettiness
+	setcycle 54 correct_response k
+	setcycle 54 WordNonword "non-word"
+	setcycle 55 word cossession
+	setcycle 55 correct_response k
+	setcycle 55 WordNonword "non-word"
+	setcycle 56 word brotesting
+	setcycle 56 correct_response k
+	setcycle 56 WordNonword "non-word"
+	setcycle 57 word retersion
+	setcycle 57 correct_response k
+	setcycle 57 WordNonword "non-word"
+	setcycle 58 word cotating
+	setcycle 58 correct_response k
+	setcycle 58 WordNonword "non-word"
+	setcycle 59 word colerant
+	setcycle 59 correct_response k
+	setcycle 59 WordNonword "non-word"
+	run LexiDec_sequence
+
+define sketchpad LexiDec_Target
+	set duration 0
+	set description "Displays stimuli"
+	draw textline center=1 color="#00007f" font_bold=yes font_family=sans font_italic=no font_size=90 html=yes show_if=always text="[word]" x=5 y=-89 z_index=0
+	draw textline center=1 color="#000000" font_bold=yes font_family=sans font_italic=no font_size=30 html=yes show_if=always text="Press A<br />= real word" x=-196 y=115 z_index=0
+	draw textline center=1 color="#000000" font_bold=yes font_family=sans font_italic=no font_size=30 html=yes show_if=always text="Press K <br />= not a real word" x=220 y=115 z_index=0
+
+define keyboard_response LexiDec_keyboard_response
+	set timeout infinite
+	set flush yes
+	set event_type keypress
+	set duration keypress
+	set description "Collects keyboard responses"
+
+define sequence LexiDec_sequence
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run LexiDec_Fix always
+	run LexiDec_Target always
+	run LexiDec_keyboard_response always
+	run Logger_All always
+
+define sketchpad LexicDec_Instr1
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=black font_bold=yes font_family=sans font_italic=no font_size=60 html=yes show_if=always text="Lexical Decision Task" x=2 y=-182 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=sans font_italic=no font_size=25 html=yes show_if=always text="You will see a word in the centre of the screen." x=0 y=-64 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=sans font_italic=no font_size=35 html=yes show_if=always text="" x=0 y=-32 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=sans font_italic=no font_size=23 html=yes show_if=always text="Your task is to decide whether it is a real word or not." x=0 y=0 z_index=0
+	draw textline center=1 color=black font_bold=yes font_family=sans font_italic=no font_size=30 html=yes show_if=always text="Press any key to see the examples <br />and how to respond" x=0 y=192 z_index=0
+	draw textline center=1 color=black font_bold=no font_family=sans font_italic=no font_size=25 html=yes show_if=always text="For example, 'apple'' is a real word, but 'kuaxuba' is not a real word." x=0 y=64 z_index=0
+
+define logger Logger_All
+	set description "Logs experimental data"
+	set auto_log yes
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run LexicDec_Instr1 always
+	run LexiDec_Instr2 always
+	run LexiDec_Loop always
+	run End always
+

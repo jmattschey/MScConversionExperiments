@@ -6,7 +6,7 @@ Digit Span Tasks can be used to assess working memory span. Participants are pre
 
 **Formats**
 
-[Open Sesame - Offline & Online](https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/DigitSpan_Online.zip) 
+[Open Sesame - Offline & Online](GitHub/DigitSpan_Online.osexp) 
 
 **Things you will need to know for your Methods section**
 

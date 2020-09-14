@@ -24,7 +24,7 @@
 <meta name="author" content="Jennifer Mattschey" />
 
 
-<meta name="date" content="2020-09-11" />
+<meta name="date" content="2020-09-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -75,8 +75,9 @@
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#choosing-an-experiment-for-your-research-project"><i class="fa fa-check"></i><b>1.1</b> Choosing an Experiment for your Research Project</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#how-to-use-the-experiment-library"><i class="fa fa-check"></i><b>1.2</b> How to use the Experiment Library</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#accessibility"><i class="fa fa-check"></i><b>1.3</b> Accessibility</a></li>
-<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#other-institutions-and-non-psychology-staff-and-students"><i class="fa fa-check"></i><b>1.4</b> Other institutions and non-Psychology staff and students</a><ul>
-<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#adapting-the-experiment-library-for-other-courses"><i class="fa fa-check"></i><b>1.4.1</b> Adapting the Experiment Library for other courses</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#downloading-files-from-github"><i class="fa fa-check"></i><b>1.4</b> Downloading files from GitHub</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#other-institutions-and-non-psychology-staff-and-students"><i class="fa fa-check"></i><b>1.5</b> Other institutions and non-Psychology staff and students</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="index.html"><a href="index.html#adapting-the-experiment-library-for-other-courses"><i class="fa fa-check"></i><b>1.5.1</b> Adapting the Experiment Library for other courses</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="intelligence-tests.html"><a href="intelligence-tests.html"><i class="fa fa-check"></i><b>2</b> Intelligence Tests</a><ul>
@@ -220,7 +221,7 @@ Figure 4.2: Targets can be surrounded by congruent, incongruent, or neutral stim
 </ul>
 <p><strong>Formats</strong></p>
 <p>The task is available in two different Open Sesame formats:</p>
-<p><a href="https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/ANT_OfflineWithPython.zip">Open Sesame Offline - Python</a> | <a href="https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/ANT_OnlineWithJS.zip">Open Sesame Online - JavaScript</a></p>
+<p><a href="GitHub/ANT_OfflineWithPython.osexp">Open Sesame Offline - Python</a> | <a href="GitHub/ANT_OnlineWithJS.osexp">Open Sesame Online - JavaScript</a></p>
 <p><strong>Things you will need to know for your Methods section</strong></p>
 <p>The ANT designed by Fan et al. (2002) displays the first fixation cross of each trial for 400-1600ms, which is determined randomly. The display duration of the last fixation cross is determined by subtracting the duration of the first fixation cross from 3500ms. So if the first fixation cross was on screen for 500ms, the last fixation cross would be displayed for 3000ms, because 3500 - 500 = 3000. To randomly calculate these numbers, each Open Sesame file has an inline script. For the online version, it is written in Javascript, for the offline version in Python.</p>
 <p><strong>ANT References</strong></p>
@@ -241,7 +242,7 @@ Figure 4.3: Example sequence of a Simon Task with coloured squares.
 <p>Other variations of the task use the written words “left” and “right”, or arrows.</p>
 <p><strong>Formats</strong></p>
 <p>The coloured square version of task is available for Open Sesame:</p>
-<p><a href="https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/SimonTask.zip">Open Sesame - Online &amp; Offline</a></p>
+<p><a href="GitHub/SimonTask.osexp">Open Sesame - Online &amp; Offline</a></p>
 <div id="what-if-i-want-to-change-the-task-from-squares-to-arrows-or-something-else" class="section level3">
 <h3><span class="header-section-number">4.2.1</span> What if I want to change the task from squares to arrows or something else?</h3>
 <p>Open the Simon Task and identify the following two sketchpads:</p>
@@ -356,7 +357,7 @@ Figure 4.15: The second step is to change the responses we allow in the keyboard
 <p>The Stroop Task (Stroop, 1935) is an interference control task that requires participants to identify the font colour in which colour words are written in. The word and the font colour can be either congruent, e.g. <span style="color: red;">RED</span>, or incongruent, e.g. <span style="color: green;">BLUE</span>. On incongruent trials, reaction time generally increases while accuracy decreases. The difference in performance between congruent and incongruent trials is also referred to as the Stroop Effect.</p>
 <p><strong>Formats</strong></p>
 <p>The Stroop Task is available for Open Sesame:</p>
-<p><a href="https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/StroopTask.zip">Open Sesame - Online &amp; Offline</a></p>
+<p><a href="GitHub/StroopTask.osexp">Open Sesame - Online &amp; Offline</a></p>
 <div id="how-to-change-the-words-andor-colours" class="section level3">
 <h3><span class="header-section-number">4.3.1</span> How to change the words and/or colours</h3>
 <p>To change either the words that are displayed or the colour they are displayed in, you need to locate the Pract_Stroop and Stroop_Loop in the experiment file. The Figure below explains what each column defines.</p>
@@ -377,7 +378,7 @@ Figure 4.16: Overview of what wach column in the Pract_Stroop loop defines.
 <p>Thus, if the cue appears after more than around 300ms, we appear to experience suppression of our ability to orient attention to the cued location. This suppression is the “inhibition of return” (e.g. to that display location). Posner and Cohen (1984) suggested that IOR facilitates the detection of novel information and may thus aid <strong>visual search</strong>.</p>
 <p><strong>Formats</strong></p>
 <p>The task is available for Open Sesame:</p>
-<p><a href="https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/InhibitionofReturn.zip">Open Sesame - Online &amp; Offline</a></p>
+<p><a href="GitHub/InhibitionofReturn.osexp">Open Sesame - Online &amp; Offline</a></p>
 <p><strong>Things you will need to know for your Methods section</strong></p>
 <p>Targets can appear 50ms, 200ms, 500ms or 800ms after the cue. You can change this by opening <strong>“Pract_InhibitionOfReturn_loop”</strong> and <strong>“InhibitionOfReturn_loop”</strong> and changing the values in the <strong>“SOA”</strong> column.</p>
 <p>The paradigm used in the Open Sesame task is based on Zhao and Heinke (2014) but not identical to it.</p>

@@ -12,7 +12,11 @@ description: "This is a book looking at different experimental paradigms. It was
 
 # Psychology Conversion Course Experiment Library
 
-This collection of experiments was created for the [MSc in Psychology](https://www.strath.ac.uk/courses/postgraduatetaught/psychologywithaspecialisationinbusiness), an online Psychology conversion course run at the University of Strathclyde. The projects aim to provide students with a starting point, from which they can develop their own experiments. This 'book' can be accessed [as a open textbook online](https://jmattschey.github.io/MScConversionExperiments) or C8983: Empirical Project MyPlace page. Please note, if you are accessing the open textbook, please note that some projects are copyright protected and for these, the experiment files can only be accessed via MyPlace. Currently, only the section on intelligence tests is affected by these restrictions. If you are viewing the PDF or EPUB version, it is worth mentioning that the few gifs that have been embedded will not be displayed. To view them please access the [open textbook](https://jmattschey.github.io/MScConversionExperiments).
+This collection of experiments was created for the [MSc in Psychology](https://www.strath.ac.uk/courses/postgraduatetaught/psychologywithaspecialisationinbusiness), an online Psychology conversion course at the University of Strathclyde. The projects aim to provide students with a starting point, from which they can develop their own experiments. Please note that some projects are copyright protected and the files for them are stored in the university network.   
+
+Currently, only the section on intelligence tests is affected by these restrictions. If you are a student at the University Strathclyde, please ask your supervisor to send you the files. They will be able to locate them in the conversion course Empirical Project folder on their i-drive. 
+
+If you are viewing the PDF or EPUB version, it is worth mentioning that the few gifs that have been embedded will not be displayed. If you come across a reference to a Figure that you cannot see, please refer back to this online version.
 
 
 
@@ -38,6 +42,15 @@ knitr::include_graphics('images/accessibility.PNG')
 ```
 
 It is also possible to search the Experiment Library from this menu and to download the book as epub or PDF. Please note that while the epub and PDF version contain most Figures, these versions do not currently include any Figures in gif format. If you notice a reference to a Figure that is not contained within these versions, it is likely to be a gif that you will be able to view in the online version.
+
+## Downloading files from GitHub
+
+If you have never used GitHub, it might look a little confusing and the download button can be difficult to find When you click on the link that leads you to the experiment file, you will see something like the picture below. Just press the download button (framed in red) to download the file.
+
+```{r Figure0-2, out.width = '95%', fig.align = 'center', echo = FALSE, fig.cap = 'Click the download button to start downloading the experiment.'}
+
+knitr::include_graphics('images/opensesame/download.png')
+```
 
 ## Other institutions and non-Psychology staff and students
 

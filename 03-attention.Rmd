@@ -31,7 +31,7 @@ Performance in relation to the three networks can be assessed based on differenc
 
 The task is available in two different Open Sesame formats: 
 
-[Open Sesame Offline - Python](https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/ANT_OfflineWithPython.zip) | [Open Sesame Online - JavaScript](https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/ANT_OnlineWithJS.zip) 
+[Open Sesame Offline - Python](GitHub/ANT_OfflineWithPython.osexp) | [Open Sesame Online - JavaScript](GitHub/ANT_OnlineWithJS.osexp) 
 
 **Things you will need to know for your Methods section**
 
@@ -65,7 +65,7 @@ Other variations of the task use the written words "left" and "right", or arrows
 
 The coloured square version of task is available for Open Sesame: 
 
-[Open Sesame - Online & Offline](https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/SimonTask.zip) 
+[Open Sesame - Online & Offline](GitHub/SimonTask.osexp) 
 
 
 ### What if I want to change the task from squares to arrows or something else?
@@ -217,7 +217,7 @@ The Stroop Task (Stroop, 1935) is an interference control task that requires par
 
 The Stroop Task is available for Open Sesame: 
 
-[Open Sesame - Online & Offline](https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/StroopTask.zip) 
+[Open Sesame - Online & Offline](GitHub/StroopTask.osexp) 
 
 ### How to change the words and/or colours
 
@@ -245,7 +245,7 @@ Thus, if the cue appears after more than around 300ms, we appear to experience s
 
 The task is available for Open Sesame: 
 
-[Open Sesame - Online & Offline](https://github.com/jmattschey/MScConversionExperiments/blob/master/GitHub/InhibitionofReturn.zip) 
+[Open Sesame - Online & Offline](GitHub/InhibitionofReturn.osexp) 
 
 
 **Things you will need to know for your Methods section**
