@@ -63,11 +63,11 @@
 \contentsline {section}{\numberline {12.1}How to install Open Sesame}{65}{section.12.1}%
 \contentsline {subsection}{\numberline {12.1.1}Windows:}{65}{subsection.12.1.1}%
 \contentsline {subsection}{\numberline {12.1.2}Mac OS}{66}{subsection.12.1.2}%
-\contentsline {section}{\numberline {12.2}Open Sesame Tutorials}{67}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Open Sesame: The Basics}{67}{section.12.3}%
-\contentsline {section}{\numberline {12.4}Starting to work with Open Sesame}{68}{section.12.4}%
+\contentsline {section}{\numberline {12.2}Open Sesame Tutorials}{66}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Open Sesame: The Basics}{66}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Starting to work with Open Sesame}{67}{section.12.4}%
 \contentsline {section}{\numberline {12.5}Loggers}{68}{section.12.5}%
-\contentsline {section}{\numberline {12.6}Open sesame on Android}{69}{section.12.6}%
+\contentsline {section}{\numberline {12.6}Open sesame on Android}{68}{section.12.6}%
 \contentsline {chapter}{\numberline {13}Open Sesame - Online}{71}{chapter.13}%
 \contentsline {section}{\numberline {13.1}Fullscreen vs.\nobreakspace {}Browser Window}{71}{section.13.1}%
 \contentsline {section}{\numberline {13.2}SONA}{72}{section.13.2}%
