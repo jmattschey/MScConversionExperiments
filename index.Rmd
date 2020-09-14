@@ -1,5 +1,5 @@
 --- 
-title: "MSc Psychology (conversion) - Experiment Library"
+title: "MSc Psychology (Conversion) - Experiment Library"
 author: "Jennifer Mattschey"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
