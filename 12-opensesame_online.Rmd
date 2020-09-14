@@ -2,7 +2,7 @@
 
 The [official Open Sesame website](https://osdoc.cogsci.nl/3.2/manual/osweb/) provides some information on how to test experiments that were designed for use online. 
 
-If you are at the University of Strathclyde, you will have access to the university's JATOS server. Students should contact their supervisor to find out how to access the server. Staff that would like to use the server but has not received the user guide can contact [Dr Jennifer Mattschey](jennifer.mattschey@strath.ac.uk).
+If you are at the University of Strathclyde, you will have access to the university's JATOS server. Students should contact their supervisor to find out how to access the server. Staff that would like to use the server but who have not received the user guide can contact [Dr Jennifer Mattschey](jennifer.mattschey@strath.ac.uk).
 
 ## Fullscreen vs. Browser Window
 
@@ -32,7 +32,7 @@ knitr::include_graphics('images/opensesame/fullscreen2.PNG')
 
 Using JATOS with SONA is possible but you will still need to mark participants as 'participated' or 'no show'. To do this, you need to find a way to identify them.
 
-To do this, you can download the file posted to the Open Sesame forum [here](https://forum.cogsci.nl/discussion/5876/) and copy it into your experiment file. If you want to combine Qualtrics and Open Sesame, this also allows us to link both by asking participants to enter their participant ID.
+One way to acieve this is to download this file posted to the Open Sesame forum [by clicking here](https://forum.cogsci.nl/discussion/5876/). Just copy the file into your experiment file and remember to acknowledge its source. If you want to combine Qualtrics and Open Sesame, this also allows us to link both sets of data by asking participants to enter their participant ID.
 
 ## Questionnaires
 
